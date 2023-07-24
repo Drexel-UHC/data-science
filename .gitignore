@@ -1,0 +1,5 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+etl/code/spatial/processed/tigris_places.parquet
