@@ -13,13 +13,19 @@
 }
 
 { # Pulls -------------------------------------------------------------------
+  df_state = etl_demographics('state', list__variables, vec__years)
   df_place = etl_demographics('place', list__variables, vec__years)
   df_county = etl_demographics('county', list__variables, vec__years)
 }
 
 
 { # Export ------------------------------------------------------------------
+  df_state %>% arrow::write_parquet("code/demographics/processed/df_state.parquet")
+  df_place %>% arrow::write_parquet("code/demographics/processed/df_place.parquet")
+  df_county %>% arrow::write_parquet("code/demographics/processed/df_county.parquet")
+  
   df_demographics = list(
+    df_state,
     df_place,
     df_county
   ) %>% 

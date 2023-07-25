@@ -1,6 +1,7 @@
 #' this funciton will use used to pull and format cenus data for our demographics seeds
 #' 
 #' Examples:
+#'    geo_tmp = 'state'
 #'    geo_tmp = 'place'
 #'    
 
