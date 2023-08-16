@@ -6,8 +6,10 @@
   census = lst(
     df_place_raw = arrow::read_parquet("code/spatial/processed/df_place_raw.parquet"),
     df_county_raw = arrow::read_parquet("code/spatial/processed/df_county_raw.parquet"),
+    df_state_raw = arrow::read_parquet("code/spatial/processed/df_state_raw.parquet"),
     sf_place = geoarrow::read_geoparquet_sf("code/spatial/processed/sf_place_simp.parquet"),
     sf_county = geoarrow::read_geoparquet_sf("code/spatial/processed/sf_county_simp.parquet"),
+    sf_state = geoarrow::read_geoparquet_sf("code/spatial/processed/sf_state_simp.parquet"),
   )
   
   ## Local objects
@@ -88,11 +90,44 @@
 }
 
 
+{ # state ------------------------------------------------------------
+  
+  ## Metadata
+  df_state = census$df_state_raw %>%
+    mutate(geo = 'state') %>% 
+    select(geo,
+           geoid = GEOID,
+           state_fip = STATEFP, 
+           state_name = NAME,
+           aland_m2 = ALAND,
+           lat = INTPTLAT,
+           lon = INTPTLON) %>% 
+    left_join(df_pop_2020) %>% 
+    mutate(aland_km2 = aland_m2/10^6,
+           aland_mile2 =  aland_km2 / 2.58999,
+           pop_dens = pop/aland_mile2) %>% 
+    left_join(etl$xwalk_state %>% 
+                select(state_fip, region_name, division_name))
+  
+  
+  ## Boundaries
+  sf_state =  census$sf_state %>% 
+    select(geoid = GEOID) %>% 
+    left_join(df_state)
+  
+  ## Export
+  sf_state %>% geoarrow::write_geoparquet("clean/boundaries/state.parquet")
+  sf_state %>% geojsonio::topojson_write(file  = "clean/boundaries/state.topojson")
+  sf_state %>% geojsonio::geojson_write(file = "clean/boundaries/state.json")
+  sf_state %>% sf::st_write("clean/boundaries/state.shp")
+  cli_alert_success("state spatial exports done")
+}
+
 
 { # EDA ---------------------------------------------------------------------
   
 
-  sf_place %>% 
+  sf_state %>% 
     leaflet() %>% 
     addTiles() %>% 
     addPolygons()  

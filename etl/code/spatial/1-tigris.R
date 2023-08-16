@@ -1,5 +1,6 @@
 #' Unprocessed imports from Census 
-
+library(dplyr)
+library(tigris)
 
 { # Place ------------------------------------------------------------
   
@@ -38,6 +39,25 @@
   cli::cli_alert_success("County imports done!")
   
 } 
+
+{ # State ------------------------------------------------------------
+  
+  ## Raw
+  sf_state_raw = tigris::states()
+  df_state_raw = sf_state_raw %>% as.data.frame() %>% select(-geometry) %>% as_tibble()
+  
+  ## Simplified 
+  sf_state_simp =  sf_state_raw %>%  rmapshaper::ms_simplify(keep = 0.05)
+  
+  ## Exports
+  sf_state_raw %>% geoarrow::write_geoparquet("code/spatial/processed/sf_state_raw.parquet")
+  sf_state_simp %>% geoarrow::write_geoparquet("code/spatial/processed/sf_state_simp.parquet")
+  df_state_raw %>% arrow::write_parquet("code/spatial/processed/df_state_raw.parquet")
+  
+  cli::cli_alert_success("state imports done!")
+  
+} 
+
 { # EDA ---------------------------------------------------------------------
   
   tigris_places %>% 
