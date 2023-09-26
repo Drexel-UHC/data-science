@@ -1,0 +1,494 @@
+@prefix : <http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/> .
+
+<http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19> rdf:type owl:Ontology ;
+                                                                           rdfs:comment "Public Hleath ontology put together at the UHC 2023 SUmmer Institute course on FAIR and CARE principles." .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :Variable ;
+           rdfs:range :Dataset .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/mayAffect
+:mayAffect rdf:type owl:ObjectProperty ;
+           rdfs:domain :Determinants_of_Health ;
+           rdfs:range :Health_Outcome .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Aerial_Photography
+:Aerial_Photography rdf:type owl:Class ;
+                    rdfs:subClassOf :Geographical_Data .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Origin
+:Data_Origin rdf:type owl:Class ;
+             rdfs:subClassOf :Variable .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Source
+:Data_Source rdf:type owl:Class ;
+             rdfs:subClassOf :Variable .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf :Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset_Description
+:Dataset_Description rdf:type owl:Class ;
+                     rdfs:subClassOf :Dataset .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset_Version
+:Dataset_Version rdf:type owl:Class ;
+                 rdfs:subClassOf :Dataset .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Derived
+:Derived rdf:type owl:Class ;
+         rdfs:subClassOf :Data_Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#FASTD_Survey
+:FASTD_Survey rdf:type owl:Class ;
+              rdfs:subClassOf :Survey_Data .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#GIS_Data
+:GIS_Data rdf:type owl:Class ;
+          rdfs:subClassOf :Geographical_Data .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geographical_Data
+:Geographical_Data rdf:type owl:Class ;
+                   rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geonomic_Data
+:Geonomic_Data rdf:type owl:Class ;
+               rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Metadata
+:Metadata rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation
+:Observation rdf:type owl:Class ;
+             rdfs:subClassOf :Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation_Time
+:Observation_Time rdf:type owl:Class ;
+                  rdfs:subClassOf :Observation .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Primary
+:Primary rdf:type owl:Class ;
+         rdfs:subClassOf :Data_Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Q1za_recomendations_on_donuts
+:Q1za_recomendations_on_donuts rdf:type owl:Class ;
+                               rdfs:subClassOf :FASTD_Survey .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Q2Xa_best_tacos_in_city
+:Q2Xa_best_tacos_in_city rdf:type owl:Class ;
+                         rdfs:subClassOf :FASTD_Survey .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Quantitative_Data
+:Quantitative_Data rdf:type owl:Class ;
+                   rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Secondary
+:Secondary rdf:type owl:Class ;
+           rdfs:subClassOf :Data_Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Survey_Data
+:Survey_Data rdf:type owl:Class ;
+             rdfs:subClassOf :Data ;
+             rdfs:comment """This section of ontlogy was inspired by the 	Logical Observation Identifier Names and Codes (LOINC) ontology. It has really great way of conceptualizing biomedical and survey data. 
+
+
+https://bioportal.bioontology.org/ontologies/LOINC/?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FLNC%2FMTHU000004""" .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable
+:Variable rdf:type owl:Class ;
+          rdfs:subClassOf :Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable_Description
+:Variable_Description rdf:type owl:Class ;
+                      rdfs:subClassOf :Variable .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Health_Commissioner's_Office
+<http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Health_Commissioner's_Office> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Maternal,_Child,_and_Family_Health
+<http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Maternal,_Child,_and_Family_Health> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Medical_Examiner's_Office
+<http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Medical_Examiner's_Office> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Air_Management_Services
+:Air_Management_Services rdf:type owl:Class ;
+                         rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Air_Quality
+:Air_Quality rdf:type owl:Class ;
+             rdfs:subClassOf :Environmental_Determinants_of_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Ambulatory_Health_Services
+:Ambulatory_Health_Services rdf:type owl:Class ;
+                            rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area
+:Area rdf:type owl:Class ;
+      rdfs:subClassOf :Spatial_Scope .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting
+:Care_Setting rdf:type owl:Class ;
+              rdfs:subClassOf :Spatial_Scope .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Chronic_Disease_and_Injury_Prevention
+:Chronic_Disease_and_Injury_Prevention rdf:type owl:Class ;
+                                       rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Cold_Turkey
+:Cold_Turkey rdf:type owl:Class ;
+             rdfs:subClassOf :Smoking_Cessation .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Community_Health
+:Community_Health rdf:type owl:Class ;
+                  rdfs:subClassOf :Research_Domains .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data
+:Data rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Determinants_of_Health
+:Determinants_of_Health rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf :Health_Outcome ;
+         rdfs:comment "A disease refers to a pathological condition or disorder that affects the normal functioning of an organism. It involves an abnormal physiological or structural alteration in the body or its organs, tissues, or cells. Diseases can have various causes, such as infections, genetic factors, environmental factors, or a combination of these. Examples of diseases include influenza, diabetes, cancer, malaria, and asthma. Diseases are often characterized by specific signs, symptoms, and diagnostic criteria." ,
+                      """In the context of crafting a public health ontology, it's important to establish clear definitions for terms like \"disease\" and \"illness.\" While these terms are sometimes used interchangeably in everyday language, they can have distinct meanings within the field of healthcare. Here's a general differentiation:
+
+To summarize, disease is typically used to describe a specific pathological condition or disorder, while illness refers to the overall experience and perception of being unwell. Including both concepts in a public health ontology can help capture the different aspects of health and provide a comprehensive understanding of the field.""" ;
+         rdfs:label "Disease"@en .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease_Control
+:Disease_Control rdf:type owl:Class ;
+                 rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Drexel_Urban_Health_Collaborative
+:Drexel_Urban_Health_Collaborative rdf:type owl:Class ;
+                                   rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Determinants_of_Health
+:Environmental_Determinants_of_Health rdf:type owl:Class ;
+                                      rdfs:subClassOf :Determinants_of_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Health_Services
+:Environmental_Health_Services rdf:type owl:Class ;
+                               rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/HIV_Health
+:HIV_Health rdf:type owl:Class ;
+            rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Equity
+:Health_Equity rdf:type owl:Class ;
+               rdfs:subClassOf :Research_Domains .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome
+:Health_Outcome rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Human_Resources
+:Human_Resources rdf:type owl:Class ;
+                 rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Illness
+:Illness rdf:type owl:Class ;
+         rdfs:subClassOf :Health_Outcome ;
+         rdfs:comment "Illness, on the other hand, is a broader term than disease that encompasses a person's subjective experience of being unwell. It refers to the perception and experience of being sick, including the physical, emotional, and social aspects. Illness can encompass the symptoms, pain, discomfort, and distress that a person experiences due to a disease. It is influenced by factors such as individual perception, cultural beliefs, and social context. Illness may or may not be associated with a diagnosable disease."@en .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Immigrant_Population
+:Immigrant_Population rdf:type owl:Class ;
+                      rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Interventions
+:Interventions rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Laboratory_Services
+:Laboratory_Services rdf:type owl:Class ;
+                     rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Maternal_Health
+:Maternal_Health rdf:type owl:Class ;
+                 rdfs:subClassOf :Health_Outcome .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Mental_Health
+:Mental_Health rdf:type owl:Class ;
+               rdfs:subClassOf :Health_Outcome .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Nicotine_Patch
+:Nicotine_Patch rdf:type owl:Class ;
+                rdfs:subClassOf :Smoking_Cessation .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Organization
+:Organization rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments
+:PDPH_Departments rdf:type owl:Class ;
+                  rdfs:subClassOf :Philadelphia_Department_of_Public_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Programs
+:PDPH_Programs rdf:type owl:Class ;
+               rdfs:subClassOf :Philadelphia_Department_of_Public_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_age
+:People_by_age rdf:type owl:Class ;
+               rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_education
+:People_by_education rdf:type owl:Class ;
+                     rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_employment
+:People_by_employment rdf:type owl:Class ;
+                      rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_gender
+:People_by_gender rdf:type owl:Class ;
+                  rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_sex
+:People_by_sex rdf:type owl:Class ;
+               rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_with_mgiration_background
+:People_with_mgiration_background rdf:type owl:Class ;
+                                  rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Philadelphia_Department_of_Public_Health
+:Philadelphia_Department_of_Public_Health rdf:type owl:Class ;
+                                          rdfs:subClassOf :Organization .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups
+:Population_Groups rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Health
+:Population_Health rdf:type owl:Class ;
+                   rdfs:subClassOf :Research_Domains .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Research_Domains
+:Research_Domains rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Smoking_Cessation
+:Smoking_Cessation rdf:type owl:Class ;
+                   rdfs:subClassOf :Interventions .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Social_Determinants_of_Health
+:Social_Determinants_of_Health rdf:type owl:Class ;
+                               rdfs:subClassOf :Determinants_of_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Spatial_Scope
+:Spatial_Scope rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Substance_Use_Prevention_and_Harm_Reduction
+:Substance_Use_Prevention_and_Harm_Reduction rdf:type owl:Class ;
+                                             rdfs:subClassOf :PDPH_Departments .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Target_group_of_policy_intervention
+:Target_group_of_policy_intervention rdf:type owl:Class ;
+                                     rdfs:subClassOf :Population_Groups .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Trauma
+:Trauma rdf:type owl:Class ;
+        rdfs:subClassOf :Mental_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Vaccines
+:Vaccines rdf:type owl:Class ;
+          rdfs:subClassOf :Interventions .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Water_Quality
+:Water_Quality rdf:type owl:Class ;
+               rdfs:subClassOf :Environmental_Determinants_of_Health .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_county
+:census_county rdf:type owl:Class ;
+               rdfs:subClassOf :Area .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_place
+:census_place rdf:type owl:Class ;
+              rdfs:subClassOf :Area .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_region
+:census_region rdf:type owl:Class ;
+               rdfs:subClassOf :Area ;
+               rdfs:comment "Census region."@en .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_tract
+:census_tract rdf:type owl:Class ;
+              rdfs:subClassOf :Area .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_zcta
+:census_zcta rdf:type owl:Class ;
+             rdfs:subClassOf :Area .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/chronic
+:chronic rdf:type owl:Class ;
+         rdfs:subClassOf :Disease .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/covid-19
+:covid-19 rdf:type owl:Class ;
+          rdfs:subClassOf :virus .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/home_care
+:home_care rdf:type owl:Class ;
+           rdfs:subClassOf :Care_Setting .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/hospital_care
+:hospital_care rdf:type owl:Class ;
+               rdfs:subClassOf :Care_Setting .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/informal_care
+:informal_care rdf:type owl:Class ;
+               rdfs:subClassOf :Care_Setting .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/nursing_home_care
+:nursing_home_care rdf:type owl:Class ;
+                   rdfs:subClassOf :Care_Setting .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/outpatient_care
+:outpatient_care rdf:type owl:Class ;
+                 rdfs:subClassOf :Care_Setting .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/parcel
+:parcel rdf:type owl:Class ;
+        rdfs:subClassOf :Area .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/rural
+:rural rdf:type owl:Class ;
+       rdfs:subClassOf :spatial_categorizations .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/spatial_categorizations
+:spatial_categorizations rdf:type owl:Class ;
+                         rdfs:subClassOf :Area .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/std
+:std rdf:type owl:Class ;
+     rdfs:subClassOf :virus .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/suburban
+:suburban rdf:type owl:Class ;
+          rdfs:subClassOf :spatial_categorizations .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/urban
+:urban rdf:type owl:Class ;
+       rdfs:subClassOf :spatial_categorizations .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/virus
+:virus rdf:type owl:Class ;
+       rdfs:subClassOf :Disease .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/zip
+:zip rdf:type owl:Class ;
+     rdfs:subClassOf :Area .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

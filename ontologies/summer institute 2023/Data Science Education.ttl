@@ -1,0 +1,1258 @@
+@prefix : <http://bigdatau.org/dseo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix edam: <http://edamontology.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://bigdatau.org/dseo> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+#  
+# http://www.w3.org/2002/07/owl#sameAs
+
+owl:sameAs a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#broadMatch
+
+skos:broadMatch a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#broaderTransitive
+
+rdfs:subClassOf a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#closeMatch
+
+skos:closeMatch a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#narrowMatch
+
+skos:narrowMatch a owl:AnnotationProperty .
+# 
+# http://www.w3.org/2004/02/skos/core#relatedMatch
+
+skos:relatedMatch a owl:AnnotationProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://bigdatau.org/dseo#Excel
+
+:Excel a owl:Class ;
+	rdfs:comment "Microsoft Office spreadsheet tool often used for analysis in business, biology, and social sciences" ;
+	rdfs:label "Excel" ;
+	rdfs:seeAlso "https://products.office.com/en-us/excel" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:closeMatch "http://edamontology.org/format_3468" , "http://edamontology.org/format_3620" ;
+	skos:exactMatch "http://dbpedia.org/resource/Microsoft_Excel" ;
+	skos:relatedMatch "http://edamontology.org/format_3751" .
+# 
+# http://bigdatau.org/dseo#GIS
+
+:GIS a owl:Class ;
+	rdfs:comment "Spatial, geographic data; describes the exact geographic information system (GIS) format" ;
+	rdfs:label "GIS" ;
+	rdfs:subClassOf :spatial_data ;
+	skos:exactMatch "http://dbpedia.org/resource/Geographic_information_system" .
+# 
+# http://bigdatau.org/dseo#Galaxy
+
+:Galaxy a owl:Class ;
+	rdfs:comment "Web application that allows processing of large datasets for analysis in bioinformatics" ;
+	rdfs:label "Galaxy" ;
+	rdfs:seeAlso "https://galaxyproject.org/tutorials/g101/" ;
+	skos:broadMatch "http://edamontology.org/topic_0769" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/Galaxy_(computational_biology)" .
+# 
+# http://bigdatau.org/dseo#HTML
+
+:HTML a owl:Class ;
+	rdfs:comment "Markup language used to create webpages and web applications; often encountered in web scraping" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/HTML" ;
+	rdfs:label "HTML" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/HTML" , "http://edamontology.org/format_2331" .
+# 
+# http://bigdatau.org/dseo#Hadoop
+
+:Hadoop a owl:Class ;
+	rdfs:comment "Open source Apache project used for distributed computing; applies to the full Hadoop stack, which includes the Hadoop implementation of MapReduce" ;
+	rdfs:label "Hadoop" ;
+	skos:broadMatch "http://dbpedia.org/resource/MapReduce" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/Apache_Hadoop" .
+# 
+# http://bigdatau.org/dseo#JSON
+
+:JSON a owl:Class ;
+	rdfs:comment "Data interchange format that uses attribute-value pairs to encode data that needs to be transmitted; often the output format of an API; often used for browser/server communication" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/JSON" ;
+	rdfs:label "JSON" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/JSON" , "http://edamontology.org/format_3464" .
+# 
+# http://bigdatau.org/dseo#Java
+
+:Java a owl:Class ;
+	rdfs:comment "Programming language designed to be as platform independent as possible; popular language for desktop and mobile applications" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Java_(programming_language)" ;
+	rdfs:label "Java" ;
+	rdfs:seeAlso "https://www.oracle.com/java/index.html" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/Java_(programming_language)" .
+# 
+# http://bigdatau.org/dseo#JavaScript
+
+:JavaScript a owl:Class ;
+	rdfs:comment "Programming language fundamental to web content; used often for data applications and visualization (i.e. d3.js) in data science" ;
+	rdfs:label "JavaScript" ;
+	rdfs:seeAlso "https://developer.mozilla.org/en-US/docs/Web/JavaScript" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/JavaScript" .
+# 
+# http://bigdatau.org/dseo#MATLAB_Octave
+
+:MATLAB_Octave a owl:Class ;
+	rdfs:comment "Numerical computing environment focused primarily on the use of matrices used for scientific computing" ;
+	rdfs:label "MATLAB/Octave" ;
+	rdfs:seeAlso "https://www.gnu.org/software/octave/" , "https://www.mathworks.com/products/matlab.html?s_tid=hp_products_matlab" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:narrowMatch "http://dbpedia.org/resource/GNU_Octave" , "http://dbpedia.org/resource/MATLAB" ;
+	skos:relatedMatch "http://edamontology.org/format_3626" .
+# 
+# http://bigdatau.org/dseo#NoSQL
+
+:NoSQL a owl:Class ;
+	rdfs:comment "Broad term used to identify data storage and representation systems that does not use a relational model; examples include key-value, document, and column systems" ;
+	rdfs:label "NoSQL" ;
+	skos:broadMatch "http://edamontology.org/topic_3489" ;
+	rdfs:subClassOf :databases ;
+	skos:exactMatch "http://dbpedia.org/resource/NoSQL" .
+# 
+# http://bigdatau.org/dseo#Perl
+
+:Perl a owl:Class ;
+	rdfs:comment "General purpose, high-level programming language used often for system administration and bioinformatics; in bioinformatics, it is used for analysis" ;
+	rdfs:label "Perl" ;
+	rdfs:seeAlso "https://www.perl.org/get.html" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/Perl" .
+# 
+# http://bigdatau.org/dseo#Python
+
+:Python a owl:Class ;
+	rdfs:comment "General purpose programming language often used in data science and scientific computing" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Python_(programming_language)" ;
+	rdfs:label "Python" ;
+	rdfs:seeAlso "https://www.python.org/" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/Python_(programming_language)" .
+# 
+# http://bigdatau.org/dseo#R
+
+:R a owl:Class ;
+	rdfs:comment "Programming language for statistical computing and data visualization" ;
+	rdfs:label "R" ;
+	rdfs:seeAlso "https://www.r-project.org/about.html" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/R_(programming_language)" .
+# 
+# http://bigdatau.org/dseo#RDF
+
+:RDF a owl:Class ;
+	rdfs:comment "Model for semantic web data; RDF is an exact format that is used to extract web graph data where resources are nodes and links connect the nodes" ;
+	rdfs:isDefinedBy "https://www.w3.org/RDF/" ;
+	rdfs:label "RDF" ;
+	rdfs:subClassOf :graph_data ;
+	skos:exactMatch "http://dbpedia.org/resource/Resource_Description_Framework" , "http://edamontology.org/format_2376" ;
+	skos:relatedMatch "http://edamontology.org/data_2353" , "http://edamontology.org/format_3749" .
+# 
+# http://bigdatau.org/dseo#SQL
+
+:SQL a owl:Class ;
+	rdfs:comment "short for Structured Query Language, which is a specialized programming language that has foundations in relational algebra and is used to define a relational model, manipulate data in a relational database, and control permissions and privileges in the database" ;
+	rdfs:label "SQL" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/SQL" , "http://edamontology.org/format_3788" .
+# 
+# http://bigdatau.org/dseo#Spark
+
+:Spark a owl:Class ;
+	rdfs:comment "Cluster-computing framework that allows for in-memory processing" ;
+	rdfs:label "Spark" ;
+	rdfs:seeAlso "https://spark.apache.org/" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:exactMatch "http://dbpedia.org/resource/Apache_Spark" .
+# 
+# http://bigdatau.org/dseo#XML
+
+:XML a owl:Class ;
+	rdfs:comment "Markup language used for web documents; can be a datatype encountered in web scraping" ;
+	rdfs:label "XML" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/XML" , "http://edamontology.org/format_2332" .
+# 
+# http://bigdatau.org/dseo#active_learning
+
+:active_learning a owl:Class ;
+	rdfs:comment "Semi-supervised machine learning techniques in which a learning algorithm is able to interactively query the user (or some other information source) to obtain the desired outputs at new data points" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Active_learning_(machine_learning)" ;
+	rdfs:label "Active Learning" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Active_learning_(machine_learning)" .
+# 
+# http://bigdatau.org/dseo#advanced
+
+:advanced a owl:Class ;
+	rdfs:comment "Applies to difficulty; advanced resources look at a concept or collection of concepts at a deeper level; example: resource that looks at the intricacies of an algorithm, including its limitations and extensions; also applies to resources that are project-oriented, where a set of learned knowledge must be applied to a new domain" ;
+	rdfs:label "Advanced" ;
+	rdfs:subClassOf :resource_depth .
+# 
+# http://bigdatau.org/dseo#algorithms
+
+:algorithms a owl:Class ;
+	rdfs:comment "The design of specifications to solve specific problems, most commonly those of mathematics or computer science" ;
+	rdfs:label "Algorithms" ;
+	skos:broadMatch "http://edamontology.org/topic_3372" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Algorithm" .
+# 
+# http://bigdatau.org/dseo#artificial_intelligence
+
+:artificial_intelligence a owl:Class ;
+	rdfs:comment "The science and engineering of designing and implementing intelligent machines" ;
+	rdfs:label "Artificial Intelligence" ;
+	rdfs:seeAlso "http://www-formal.stanford.edu/jmc/whatisai/" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Artificial_intelligence" .
+# 
+# http://bigdatau.org/dseo#association_rule_learning
+
+:association_rule_learning a owl:Class ;
+	rdfs:comment "Unsupervised learning techniques where relations between variables in large databases are learned" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Association_rule_learning" ;
+	rdfs:label "Association Rule Learning" ;
+	rdfs:subClassOf :unsupervised_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Association_rule_learning" .
+# 
+# http://bigdatau.org/dseo#audio_data
+
+:audio_data a owl:Class ;
+	rdfs:comment "Data from sound" ;
+	rdfs:label "Audio Data" ;
+	skos:broadMatch "http://dbpedia.org/resource/Digital_Audio" ;
+	rdfs:subClassOf :datatype .
+# 
+# http://bigdatau.org/dseo#bayesian_methods
+
+:bayesian_methods a owl:Class ;
+	rdfs:comment "Statistical techniques that use Bayesian probabilities; techniques in modeling and estimation use a prior probability/distribution to inform estimation" ;
+	rdfs:label "Bayesian Methods" ;
+	rdfs:subClassOf :probability_statistics ;
+	skos:closeMatch "http://dbpedia.org/resource/Bayesian_statistics" .
+# 
+# http://bigdatau.org/dseo#big_data
+
+:big_data a owl:Class ;
+	rdfs:comment "Broad term used to describe a massive volume of data that will often require specialized tools and approaches to handle" ;
+	rdfs:label "Big Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/Big_Data" .
+# 
+# http://bigdatau.org/dseo#bioinformatics_computational_biology
+
+:bioinformatics_computational_biology a owl:Class ;
+	rdfs:comment "Application of computer science, mathematics, probability, and statistics to study biological data" ;
+	rdfs:label "Bioinformatics/Computational Biology" ;
+	rdfs:subClassOf :biology , :computer_science , :probability_statistics ;
+	skos:narrowMatch "http://dbpedia.org/resource/Bioinformatics" , "http://dbpedia.org/resource/Computational_biology" , "http://edamontology.org/topic_0091" , "http://edamontology.org/topic_3307" .
+# 
+# http://bigdatau.org/dseo#biology
+
+:biology a owl:Class ;
+	rdfs:comment "Study of living things" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Biology" ;
+	rdfs:label "Biology" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Biology" , "http://edamontology.org/topic_3070" .
+# 
+# http://bigdatau.org/dseo#biotechnology
+
+:biotechnology a owl:Class ;
+	rdfs:comment "Development of products based on or applied to living organisms" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Biotechnology" ;
+	rdfs:label "Biotechnology" ;
+	rdfs:subClassOf :biology , :computer_science , :engineering ;
+	skos:exactMatch "http://dbpedia.org/resource/Biotechnology" , "http://edamontology.org/topic_3297" .
+# 
+# http://bigdatau.org/dseo#business_analytics
+
+:business_analytics a owl:Class ;
+	rdfs:comment "Study and application of statistics and probability to evaluate and inform business decisions" ;
+	rdfs:label "Business Analytics" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Business_analytics" .
+# 
+# http://bigdatau.org/dseo#causality
+
+:causality a owl:Class ;
+	rdfs:comment "Describes machine learning techniques for causal inferencing that rely on a probabilistic graph" ;
+	rdfs:label "Causality" ;
+	skos:broadMatch "http://dbpedia.org/resource/Causal_inference" ;
+	rdfs:subClassOf :probabilistic_graphical_model .
+# 
+# http://bigdatau.org/dseo#cell_biology
+
+:cell_biology a owl:Class ;
+	rdfs:comment "Study of the structures and functions of cells in living organisms" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Cell_biology" ;
+	rdfs:label "Cell Biology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Cell_biology" , "http://edamontology.org/topic_2229" .
+# 
+# http://bigdatau.org/dseo#chemical_biology
+
+:chemical_biology a owl:Class ;
+	rdfs:comment "Application of chemical techniques, tools, and analyses, and often compounds produced through synthetic chemistry, to the study and manipulation of biological systems" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Chemical_biology" ;
+	rdfs:label "Chemical Biology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Chemical_biology" , "http://edamontology.org/topic_3369" .
+# 
+# http://bigdatau.org/dseo#chemistry
+
+:chemistry a owl:Class ;
+	rdfs:comment "Study of the composition, structure, properties, and change of matter" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Chemistry" ;
+	rdfs:label "Chemistry" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Chemistry" , "http://edamontology.org/topic_3314" .
+# 
+# http://bigdatau.org/dseo#classification
+
+:classification a owl:Class ;
+	rdfs:comment "Supervised machine learning methods used for categorical, discrete dependent variables" ;
+	rdfs:label "Classification" ;
+	skos:broadMatch "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :supervised_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Statistical_classification" .
+# 
+# http://bigdatau.org/dseo#cloud_computing
+
+:cloud_computing a owl:Class ;
+	rdfs:comment "On-demand internet based computing that uses shared physical resources; Amazon Web Services (AWS) is one of the most popular examples" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Cloud_computing" ;
+	rdfs:label "Cloud Computing" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Cloud_computing" .
+# 
+# http://bigdatau.org/dseo#clustering
+
+:clustering a owl:Class ;
+	rdfs:comment "Unsupervised learning techniques where data points are organized into groups based on underlying structure" ;
+	rdfs:label "Clustering" ;
+	skos:broadMatch "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :unsupervised_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Cluster_analysis" .
+# 
+# http://bigdatau.org/dseo#computer_science
+
+:computer_science a owl:Class ;
+	rdfs:comment "Study of theory, experimentation, and engineering for the design and use of computers" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Computer_science" ;
+	rdfs:label "Computer Science" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Computer_science" , "http://edamontology.org/topic_3316" .
+# 
+# http://bigdatau.org/dseo#data_analysis
+
+:data_analysis a owl:Class ;
+	rdfs:comment "Applying machine learning, data mining, and statistical analyses to a dataset; includes the model building, validation, and calibration process" ;
+	rdfs:label "Data Analysis" ;
+	skos:broadMatch "http://dbpedia.org/resource/Data_analysis" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:closeMatch "http://edamontology.org/operation_3658" ;
+	skos:exactMatch "http://edamontology.org/operation_2945" ;
+	skos:relatedMatch "http://edamontology.org/operation_2238" , "http://edamontology.org/operation_2423" , "http://edamontology.org/operation_2426" , "http://edamontology.org/operation_3465" .
+# 
+# http://bigdatau.org/dseo#data_cleaning
+
+:data_cleaning a owl:Class ;
+	rdfs:comment "Process of handling data inconsistencies (ex: spacing issues, NULL values, broken unicode) that interfere with analysis" ;
+	rdfs:label "Data Cleaning" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:closeMatch "http://edamontology.org/topic_3572" ;
+	skos:exactMatch "http://dbpedia.org/resource/Data_cleansing" ;
+	skos:relatedMatch "http://edamontology.org/operation_0335" , "http://edamontology.org/operation_1812" , "http://edamontology.org/operation_2428" , "http://edamontology.org/operation_3283" , "http://edamontology.org/operation_3359" , "http://edamontology.org/operation_3695" , "http://edamontology.org/topic_0219" .
+# 
+# http://bigdatau.org/dseo#data_collection
+
+:data_collection a owl:Class ;
+	rdfs:comment "Process of gathering data; can include experiment design and automated data collection via scraping or structured data extraction" ;
+	rdfs:label "Data Collection" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:exactMatch "http://dbpedia.org/resource/Data_collection" , "http://edamontology.org/topic_3077" ;
+	skos:relatedMatch "http://edamontology.org/topic_0219" .
+# 
+# http://bigdatau.org/dseo#data_exploration
+
+:data_exploration a owl:Class ;
+	rdfs:comment "Preliminary analysis step where the data is summarized and visualized in order to understand what additional analytic techniques should be used" ;
+	rdfs:label "Data Exploration" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:exactMatch "http://dbpedia.org/resource/Data_exploration" .
+# 
+# http://bigdatau.org/dseo#data_integration
+
+:data_integration a owl:Class ;
+	rdfs:comment "Combining data residing in different sources into a unified view for analysis and exploration" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Data_integration" ;
+	rdfs:label "Data Integration" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:exactMatch "http://dbpedia.org/resource/Data_integration" , "http://edamontology.org/topic_3366" ;
+	skos:narrowMatch "http://edamontology.org/operation_0335" ;
+	skos:relatedMatch "http://edamontology.org/operation_0226" , "http://edamontology.org/operation_1812" , "http://edamontology.org/operation_2990" , "http://edamontology.org/operation_3357" , "http://edamontology.org/operation_3359" , "http://edamontology.org/topic_3365" , "http://edamontology.org/topic_3489" .
+# 
+# http://bigdatau.org/dseo#data_science_process
+
+:data_science_process a owl:Class ;
+	rdfs:comment "is a dimension name; step of the data science workflow that is relevant to a resource" ;
+	rdfs:label "Data Science Process" ;
+	skos:broadMatch "http://dbpedia.org/resource/Data_science" ;
+	skos:relatedMatch "http://edamontology.org/topic_3473" .
+# 
+# http://bigdatau.org/dseo#data_visualization
+
+:data_visualization a owl:Class ;
+	rdfs:comment "Presenting data in a graphical representation in order to explore existing dataset and/or present conclusions about a dataset" ;
+	rdfs:label "Data Visualization" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:exactMatch "http://dbpedia.org/resource/Data_Visualization" ;
+	skos:narrowMatch "http://edamontology.org/operation_0337" , "http://edamontology.org/topic_0092" .
+# 
+# http://bigdatau.org/dseo#databases
+
+:databases a owl:Class ;
+	rdfs:comment "Study and application of the organization of data in a structured representation" ;
+	rdfs:label "Databases" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Database" , "http://edamontology.org/topic_3489" .
+# 
+# http://bigdatau.org/dseo#datatype
+
+:datatype a owl:Class ;
+	rdfs:comment "is a dimension name; format or type of data referenced in a resource" ;
+	rdfs:label "Datatype" ;
+	skos:relatedMatch "http://edamontology.org/data_0006" , "http://edamontology.org/format_1915" .
+# 
+# http://bigdatau.org/dseo#deep_learning
+
+:deep_learning a owl:Class ;
+	rdfs:comment "Artificial neural networks that have multiple hidden layers" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Deep_learning" ;
+	rdfs:label "Deep Learning" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :neural_networks ;
+	skos:exactMatch "http://dbpedia.org/resource/Deep_learning" .
+# 
+# http://bigdatau.org/dseo#developmental_biology
+
+:developmental_biology a owl:Class ;
+	rdfs:comment "Study of how living organisms grow and reproduce" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Developmental_biology" ;
+	rdfs:label "Developmental Biology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Developmental_biology" , "http://edamontology.org/topic_3064" .
+# 
+# http://bigdatau.org/dseo#dimensionality_reduction
+
+:dimensionality_reduction a owl:Class ;
+	rdfs:comment "Unsupervised learning techniques where a feature space is condensed" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Dimensionality_reduction" ;
+	rdfs:label "Dimensionality Reduction" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :unsupervised_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Dimensionality_reduction" .
+# 
+# http://bigdatau.org/dseo#domain
+
+:domain a owl:Class ;
+	rdfs:comment "is a dimension name; field or topic of study covered by a resource" ;
+	rdfs:label "Domain" ;
+	skos:closeMatch "http://edamontology.org/topic_0003" .
+# 
+# http://bigdatau.org/dseo#ecology
+
+:ecology a owl:Class ;
+	rdfs:comment "Study of interactions between living organisms and their environment" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Ecology" ;
+	rdfs:label "Ecology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Ecology" , "http://edamontology.org/topic_0610" .
+# 
+# http://bigdatau.org/dseo#economics
+
+:economics a owl:Class ;
+	rdfs:comment "Study of the consumption and movement of good in relation to people's behavior" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Economics" ;
+	rdfs:label "Economics" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Economics" .
+# 
+# http://bigdatau.org/dseo#education
+
+:education a owl:Class ;
+	rdfs:comment "Study and practice of learning and teaching techniques" ;
+	rdfs:label "Education" ;
+	rdfs:subClassOf :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/Education" .
+# 
+# http://bigdatau.org/dseo#electronic_health_record
+
+:electronic_health_record a owl:Class ;
+	rdfs:comment "Data captured in electronic health record systems used by healthcare providers and hospitals; Epic and Cerner are two of the largest and most well known EHR systems" ;
+	rdfs:label "Electronic Health Record" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/Electronic_health_record" , "http://edamontology.org/data_3861" .
+# 
+# http://bigdatau.org/dseo#engineering
+
+:engineering a owl:Class ;
+	rdfs:comment "Application of science and mathematics to design, study, and/or maintain structures, machines, or processes" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Engineering" ;
+	rdfs:label "Engineering" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Engineering" .
+# 
+# http://bigdatau.org/dseo#ensemble_learning
+
+:ensemble_learning a owl:Class ;
+	rdfs:comment "Machine learning technique where multiple machine learning techniques are used to create a stronger model" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Ensemble_learning" ;
+	rdfs:label "Ensemble Learning" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Ensemble_learning" .
+# 
+# http://bigdatau.org/dseo#ethics
+
+:ethics a owl:Class ;
+	rdfs:comment "Study of philosophy related to the right and wrong; in the DSEO domain, most relevant for ethics in data science" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Ethics" ;
+	rdfs:label "Ethics" ;
+	rdfs:subClassOf :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/Ethics" .
+# 
+# http://bigdatau.org/dseo#evolutionary_biology
+
+:evolutionary_biology a owl:Class ;
+	rdfs:comment "Study of the impacts of evolution on living organisms" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Evolutionary_biology" ;
+	rdfs:label "Evolutionary Biology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Evolutionary_biology" , "http://edamontology.org/topic_3299" .
+# 
+# http://bigdatau.org/dseo#gaussian_processes
+
+:gaussian_processes a owl:Class ;
+	rdfs:comment "A collection of random variables indexed by time or space such that every finite collection of those random variables has a multivariate normal distribution" ;
+	rdfs:label "Gaussian Processes" ;
+	skos:broadMatch "http://edamontology.org/operation_3658" , "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :stochastic_processes ;
+	skos:exactMatch "http://dbpedia.org/resource/Gaussian_process" .
+# 
+# http://bigdatau.org/dseo#generalized_linear_models
+
+:generalized_linear_models a owl:Class ;
+	rdfs:comment "Expanded regressions where the distributions of the dependent variable (y) can be specified" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Generalized_linear_model" ;
+	rdfs:label "Generalized Linear Models" ;
+	skos:broadMatch "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :classification , :regression ;
+	skos:exactMatch "http://dbpedia.org/resource/Generalized_linear_model" .
+# 
+# http://bigdatau.org/dseo#genetics
+
+:genetics a owl:Class ;
+	rdfs:comment "Study of genes in living organisms" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Genetics" ;
+	rdfs:label "Genetics" ;
+	skos:broadMatch "http://edamontology.org/topic_3391" ;
+	rdfs:subClassOf :molecular_biology ;
+	skos:closeMatch "http://edamontology.org/topic_3053" ;
+	skos:exactMatch "http://dbpedia.org/resource/Genetics" ;
+	skos:narrowMatch "http://edamontology.org/topic_0622" .
+# 
+# http://bigdatau.org/dseo#genomic_proteomic_data
+
+:genomic_proteomic_data a owl:Class ;
+	rdfs:comment "DNA, RNA and protein data; this tag should be used in combination with the genetics tag" ;
+	rdfs:label "Genomic Proteomic Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:narrowMatch "http://dbpedia.org/resource/Genome" , "http://dbpedia.org/resource/Protein" , "http://edamontology.org/data_0850" , "http://edamontology.org/data_0860" , "http://edamontology.org/data_0914" , "http://edamontology.org/data_1255" , "http://edamontology.org/data_1459" , "http://edamontology.org/data_1460" , "http://edamontology.org/data_1916" , "http://edamontology.org/data_2019" , "http://edamontology.org/data_2044" , "http://edamontology.org/data_2523" , "http://edamontology.org/data_2534" , "http://edamontology.org/data_2603" , "http://edamontology.org/data_2914" , "http://edamontology.org/data_3498" ;
+	skos:relatedMatch "http://edamontology.org/data_2600" .
+# 
+# http://bigdatau.org/dseo#graph_analytics
+
+:graph_analytics a owl:Class ;
+	rdfs:comment "Study of network/graph structure and the transmission of information over the structure" ;
+	rdfs:label "Graph Analytics" ;
+	skos:broadMatch "http://dbpedia.org/resource/Graph_theory" ;
+	rdfs:subClassOf :computer_science ;
+	skos:narrowMatch "http://edamontology.org/operation_2497" .
+# 
+# http://bigdatau.org/dseo#graph_data
+
+:graph_data a owl:Class ;
+	rdfs:comment "Data representing nodes and edges in a network/graph structure" ;
+	rdfs:label "Graph Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/Graph_(abstract_data_type)" , "http://edamontology.org/format_3617" ;
+	skos:narrowMatch "http://edamontology.org/format_2013" .
+# 
+# http://bigdatau.org/dseo#graph_database
+
+:graph_database a owl:Class ;
+	rdfs:comment "Data storage system that uses graph structure in its model of representation" ;
+	rdfs:label "Graph Database" ;
+	rdfs:subClassOf :databases ;
+	skos:exactMatch "http://dbpedia.org/resource/Graph_database" ;
+	skos:relatedMatch "http://edamontology.org/format_3617" .
+# 
+# http://bigdatau.org/dseo#high_performance_computing
+
+:high_performance_computing a owl:Class ;
+	rdfs:comment "Computing processes that involve parallelism to improve computation times; examples: parallel computing, grid computing, supercomputers" ;
+	rdfs:label "High Performance Computing" ;
+	skos:broadMatch "http://dbpedia.org/resource/Distributed_computing" ;
+	rdfs:subClassOf :computer_science ;
+	skos:closeMatch "http://dbpedia.org/resource/Grid_computing" ;
+	skos:narrowMatch "http://dbpedia.org/resource/High-performance_computing" ;
+	skos:relatedMatch "http://dbpedia.org/resource/High-throughput_computing" .
+# 
+# http://bigdatau.org/dseo#history
+
+:history a owl:Class ;
+	rdfs:comment "Study of the past based on existing documents" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/History" ;
+	rdfs:label "History" ;
+	rdfs:subClassOf :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/History" .
+# 
+# http://bigdatau.org/dseo#image_data
+
+:image_data a owl:Class ;
+	rdfs:comment "Data from static images" ;
+	rdfs:label "Image Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:closeMatch "http://dbpedia.org/resource/Digital_image" , "http://edamontology.org/data_2968" .
+# 
+# http://bigdatau.org/dseo#information_retrieval
+
+:information_retrieval a owl:Class ;
+	rdfs:comment "Methods and approaches for extracting information from a data collection" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Information_retrieval" ;
+	rdfs:label "Information Retrieval" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Information_retrieval" ;
+	skos:narrowMatch "http://edamontology.org/operation_2422" .
+# 
+# http://bigdatau.org/dseo#information_theory
+
+:information_theory a owl:Class ;
+	rdfs:comment "The study of the quantification, storage, and communication of information" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Information_theory" ;
+	rdfs:label "Information Theory" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Information_theory" .
+# 
+# http://bigdatau.org/dseo#introductory
+
+:introductory a owl:Class ;
+	rdfs:comment "Applies to difficulty; introductory resources are ones that introduce a concept or collection of concepts at a high level; may survey a technique" ;
+	rdfs:label "Introductory" ;
+	rdfs:subClassOf :resource_depth ;
+	skos:closeMatch "http://dbpedia.org/resource/Introductory_course" .
+# 
+# http://bigdatau.org/dseo#kernel_methods
+
+:kernel_methods a owl:Class ;
+	rdfs:comment "Machine learning techniques that use kernel functions in the representation of features; Support Vector Machine is the most common kernel method used in machine learning" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Kernel_method" ;
+	rdfs:label "Kernel Methods" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Kernel_method" .
+# 
+# http://bigdatau.org/dseo#knowledge_representation
+
+:knowledge_representation a owl:Class ;
+	rdfs:comment "Representing a domain of knowlege in a machine-readble form; includes ontologies" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Knowledge_representation_and_reasoning" ;
+	rdfs:label "Knowledge Representation" ;
+	skos:broadMatch "http://edamontology.org/topic_0605" ;
+	rdfs:subClassOf :artificial_intelligence , :databases ;
+	skos:exactMatch "http://dbpedia.org/resource/Knowledge_representation_and_reasoning" ;
+	skos:narrowMatch "http://edamontology.org/data_2353" , "http://edamontology.org/topic_0089" , "http://edamontology.org/topic_3345" ;
+	skos:relatedMatch "http://edamontology.org/topic_3365" , "http://edamontology.org/topic_3489" .
+# 
+# http://bigdatau.org/dseo#linear_algebra
+
+:linear_algebra a owl:Class ;
+	rdfs:comment "Branch of mathematics focused on vector spaces and the mappings between them" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Linear_algebra" ;
+	rdfs:label "Linear Algebra" ;
+	skos:broadMatch "http://edamontology.org/topic_3570" ;
+	rdfs:subClassOf :mathematics ;
+	skos:exactMatch "http://dbpedia.org/resource/Linear_algebra" ;
+	skos:relatedMatch "http://edamontology.org/format_3033" .
+# 
+# http://bigdatau.org/dseo#machine_learning
+
+:machine_learning a owl:Class ;
+	rdfs:comment "Techniques used to extract inferences from a dataset; can include model selection procedure and specific algorithms used" ;
+	rdfs:label "Machine Learning" ;
+	rdfs:subClassOf :artificial_intelligence , :probability_statistics ;
+	skos:exactMatch "http://dbpedia.org/resource/Machine_learning" , "http://edamontology.org/topic_3474" ;
+	skos:narrowMatch "http://dbpedia.org/resource/Data_mining" , "http://edamontology.org/topic_3473" .
+# 
+# http://bigdatau.org/dseo#marketing_analytics
+
+:marketing_analytics a owl:Class ;
+	rdfs:comment "Application of probabilty and statistics to answer questions about marketing" ;
+	rdfs:label "Marketing Analytics" ;
+	skos:broadMatch "http://dbpedia.org/resource/Analytics" , "http://dbpedia.org/resource/Marketing" ;
+	rdfs:subClassOf :business_analytics .
+# 
+# http://bigdatau.org/dseo#markov_processes
+
+:markov_processes a owl:Class ;
+	rdfs:comment "Random processes whose future probabilities are determined by its most recent values" ;
+	rdfs:isDefinedBy "http://mathworld.wolfram.com/MarkovProcess.html" ;
+	rdfs:label "Markov Processes" ;
+	skos:broadMatch "http://edamontology.org/operation_3658" , "http://edamontology.org/topic_2269" ;
+	rdfs:subClassOf :stochastic_processes ;
+	skos:narrowMatch "http://dbpedia.org/resource/Markov_chain" , "http://edamontology.org/data_1364" ;
+	skos:relatedMatch "http://dbpedia.org/resource/Markov_property" .
+# 
+# http://bigdatau.org/dseo#mathematics
+
+:mathematics a owl:Class ;
+	rdfs:comment "Study of quantity, structure, space, and change" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Mathematics" ;
+	rdfs:label "Mathematics" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Mathematics" , "http://edamontology.org/topic_3315" .
+# 
+# http://bigdatau.org/dseo#medicine_healthcare
+
+:medicine_healthcare a owl:Class ;
+	rdfs:comment "Science and practice of diagnosing, treating, and preventing disease" ;
+	rdfs:label "Medicine/Healthcare" ;
+	rdfs:subClassOf :domain ;
+	skos:closeMatch "http://edamontology.org/topic_3344" ;
+	skos:narrowMatch "http://dbpedia.org/resource/Health_care" , "http://dbpedia.org/resource/Medicine" , "http://edamontology.org/topic_3303" .
+# 
+# http://bigdatau.org/dseo#mobile_devices
+
+:mobile_devices a owl:Class ;
+	rdfs:comment "Design and usage of handheld computing" ;
+	rdfs:label "Mobile Devices" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Mobile_device" .
+# 
+# http://bigdatau.org/dseo#molecular_biology
+
+:molecular_biology a owl:Class ;
+	rdfs:comment "Study of the molecular basis of interactions between biomolecules" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Molecular_biology" ;
+	rdfs:label "Molecular Biology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Molecular_biology" , "http://edamontology.org/topic_3047" .
+# 
+# http://bigdatau.org/dseo#monte_carlo_methods
+
+:monte_carlo_methods a owl:Class ;
+	rdfs:comment "Methods that use random sampling of a distribution to solve a problem" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Monte_Carlo_method" ;
+	rdfs:label "Monte Carlo Methods" ;
+	skos:broadMatch "http://edamontology.org/operation_2238" , "http://edamontology.org/operation_3658" , "http://edamontology.org/topic_2269" ;
+	rdfs:subClassOf :probability_statistics ;
+	skos:exactMatch "http://dbpedia.org/resource/Monte_Carlo_method" .
+# 
+# http://bigdatau.org/dseo#music
+
+:music a owl:Class ;
+	rdfs:comment "An art form whose medium is sound organized in time" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Music" ;
+	rdfs:label "Music" ;
+	rdfs:subClassOf :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/Music" .
+# 
+# http://bigdatau.org/dseo#natural_language_processing
+
+:natural_language_processing a owl:Class ;
+	rdfs:comment "Branch of artificial intelligence focused on computer and human understanding through their respective languages" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Natural_language_processing" ;
+	rdfs:label "Natural Language Processing" ;
+	rdfs:subClassOf :artificial_intelligence ;
+	skos:exactMatch "http://dbpedia.org/resource/Natural_language_processing" , "http://edamontology.org/topic_0218" .
+# 
+# http://bigdatau.org/dseo#neural_networks
+
+:neural_networks a owl:Class ;
+	rdfs:comment "Machine learning methods where neuronal layers are used to represent input transformations that lead to an output state" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Artificial_neural_network" ;
+	rdfs:label "Neural Networks" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Artificial_neural_network" .
+# 
+# http://bigdatau.org/dseo#neuroimaging
+
+:neuroimaging a owl:Class ;
+	rdfs:comment "Image data of the brain; includes (but not limited to) fMRI, PET, CAT, MEG, and CT of the brain" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Neuroimaging" ;
+	rdfs:label "Neuroimaging" ;
+	skos:broadMatch "http://edamontology.org/data_2968" , "http://edamontology.org/topic_3384" ;
+	rdfs:subClassOf :image_data ;
+	skos:exactMatch "http://dbpedia.org/resource/Neuroimaging" ;
+	skos:narrowMatch "http://edamontology.org/data_3442" ;
+	skos:relatedMatch "http://edamontology.org/topic_3383" .
+# 
+# http://bigdatau.org/dseo#neuroinformatics
+
+:neuroinformatics a owl:Class ;
+	rdfs:comment "Study of of computational and statistical methods using data from neuroscience" ;
+	rdfs:label "Neuroinformatics" ;
+	skos:broadMatch "http://edamontology.org/topic_3063" ;
+	rdfs:subClassOf :computer_science , :neuroscience ;
+	skos:exactMatch "http://dbpedia.org/resource/Neuroinformatics" .
+# 
+# http://bigdatau.org/dseo#neuroscience
+
+:neuroscience a owl:Class ;
+	rdfs:comment "Study of the nervous system" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Neuroscience" ;
+	rdfs:label "Neuroscience" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Neuroscience" , "http://edamontology.org/topic_3304" .
+# 
+# http://bigdatau.org/dseo#optimization
+
+:optimization a owl:Class ;
+	rdfs:comment "Study of minimizing or maximizing a mathematical function to extract the best element in a space" ;
+	rdfs:label "Optimization" ;
+	skos:broadMatch "http://edamontology.org/topic_3569" ;
+	rdfs:subClassOf :mathematics ;
+	skos:exactMatch "http://dbpedia.org/resource/Mathematical_optimization" ;
+	skos:relatedMatch "http://edamontology.org/operation_2425" .
+# 
+# http://bigdatau.org/dseo#parallel_database
+
+:parallel_database a owl:Class ;
+	rdfs:comment "A data storage system that uses parallel architecture to scale storage and to improve query performance" ;
+	rdfs:label "Parallel Database" ;
+	skos:broadMatch "http://edamontology.org/topic_3489" ;
+	rdfs:subClassOf :databases ;
+	skos:exactMatch "http://dbpedia.org/resource/Parallel_database" .
+# 
+# http://bigdatau.org/dseo#pharmacology_drug_discovery
+
+:pharmacology_drug_discovery a owl:Class ;
+	rdfs:comment "Study of finding new medications and drugs as well as their effects on living organisms" ;
+	rdfs:label "Pharmacology Drug Discovery" ;
+	rdfs:subClassOf :biology ;
+	skos:narrowMatch "http://dbpedia.org/resource/Drug_discovery" , "http://dbpedia.org/resource/Pharmacology" , "http://edamontology.org/topic_0202" , "http://edamontology.org/topic_3336" ;
+	skos:relatedMatch "http://edamontology.org/topic_3373" .
+# 
+# http://bigdatau.org/dseo#physics
+
+:physics a owl:Class ;
+	rdfs:comment "Study of matter and its behavior through space and time" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Physics" ;
+	rdfs:label "Physics" ;
+	rdfs:subClassOf :domain ;
+	skos:exactMatch "http://dbpedia.org/resource/Physics" , "http://edamontology.org/topic_3318" .
+# 
+# http://bigdatau.org/dseo#physiology
+
+:physiology a owl:Class ;
+	rdfs:comment "Study of the mechanisms and structures and their functions in a living system" ;
+	rdfs:label "Physiology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Physiology" , "http://edamontology.org/topic_3300" .
+# 
+# http://bigdatau.org/dseo#precision_medicine
+
+:precision_medicine a owl:Class ;
+	rdfs:comment "Customization of medical treatment to an individual; used interchangeably with personalized medicine" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Precision_medicine" ;
+	rdfs:label "Precision Medicine" ;
+	rdfs:subClassOf :medicine_healthcare ;
+	skos:exactMatch "http://dbpedia.org/resource/Precision_medicine" , "http://edamontology.org/topic_3577" .
+# 
+# http://bigdatau.org/dseo#probabilistic_graphical_model
+
+:probabilistic_graphical_model a owl:Class ;
+	rdfs:comment "Probabilistic model for which a graph expresses the conditional dependence structure between random variables" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Graphical_model" ;
+	rdfs:label "Probabilistic Graphical Model" ;
+	skos:broadMatch "http://edamontology.org/operation_3658" , "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Graphical_model" .
+# 
+# http://bigdatau.org/dseo#probability_statistics
+
+:probability_statistics a owl:Class ;
+	rdfs:comment "Branch of mathematics focused on the likelihood of an event and the numerical facts and the states of individuals in the context of data" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Probability_and_statistics" ;
+	rdfs:label "Probability Statistics" ;
+	rdfs:subClassOf :mathematics ;
+	skos:exactMatch "http://dbpedia.org/resource/Probability_and_statistics" , "http://edamontology.org/topic_2269" ;
+	skos:narrowMatch "http://dbpedia.org/resource/Probability" , "http://dbpedia.org/resource/Statistics" .
+# 
+# http://bigdatau.org/dseo#programming
+
+:programming a owl:Class ;
+	rdfs:comment "The process of translating a computing problem to a computer executable program" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Computer_programming" ;
+	rdfs:label "Programming" ;
+	rdfs:subClassOf :computer_science ;
+	skos:closeMatch "http://edamontology.org/topic_3372" ;
+	skos:exactMatch "http://dbpedia.org/resource/Computer_programming" .
+# 
+# http://bigdatau.org/dseo#programming_tool
+
+:programming_tool a owl:Class ;
+	rdfs:comment "is a dimension name; a specific tool used in a resource; should try to use children tags, but if a resource describes a highly specific programming tool, can use the dimension name as a tag" ;
+	rdfs:label "Programming Tool" ;
+	skos:relatedMatch "http://edamontology.org/topic_3372" .
+# 
+# http://bigdatau.org/dseo#proteomics
+
+:proteomics a owl:Class ;
+	rdfs:comment "Study of proteins in living organisms" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Proteomics" ;
+	rdfs:label "Proteomics" ;
+	rdfs:subClassOf :molecular_biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Proteomics" , "http://edamontology.org/topic_0121" .
+# 
+# http://bigdatau.org/dseo#psychology
+
+:psychology a owl:Class ;
+	rdfs:comment "Study of the behavior and mind of humans" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Psychology" ;
+	rdfs:label "Psychology" ;
+	rdfs:subClassOf :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/Psychology" ;
+	skos:relatedMatch "http://edamontology.org/topic_3419" .
+# 
+# http://bigdatau.org/dseo#public_health_epidemiology
+
+:public_health_epidemiology a owl:Class ;
+	rdfs:comment "Study of preventing disease and promoting health within communities and societies and determining the risk factors for diseases in populations" ;
+	rdfs:label "Public Health Epidemiology" ;
+	rdfs:subClassOf :medicine_healthcare ;
+	skos:exactMatch "http://edamontology.org/topic_3305" ;
+	skos:narrowMatch "http://dbpedia.org/resource/Epidemiology" , "http://dbpedia.org/resource/Public_health" .
+# 
+# http://bigdatau.org/dseo#recommender_system
+
+:recommender_system a owl:Class ;
+	rdfs:comment "Machine learning techniques used to filter data based on individual preferences and similaries; includes Collaborative filtering and Content-based techniques" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Recommender_system" ;
+	rdfs:label "Recommender System" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Recommender_system" .
+# 
+# http://bigdatau.org/dseo#regression
+
+:regression a owl:Class ;
+	rdfs:comment "Supervised machine learning methods used for continuous dependent variables" ;
+	rdfs:label "Regression" ;
+	skos:broadMatch "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :supervised_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Regression_analysis" , "http://edamontology.org/operation_3659" .
+# 
+# http://bigdatau.org/dseo#reinforcement_learning
+
+:reinforcement_learning a owl:Class ;
+	rdfs:comment "Machine learning techniques focused on maximizing reward based on sequeunces of actions" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Reinforcement_learning" ;
+	rdfs:label "Reinforcement Learning" ;
+	skos:broadMatch "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Reinforcement_learning" .
+# 
+# http://bigdatau.org/dseo#relational_database
+
+:relational_database a owl:Class ;
+	rdfs:comment "A data storage system that uses row-based tables and connecting keys in its model of representation" ;
+	rdfs:label "Relational Database" ;
+	skos:broadMatch "http://edamontology.org/topic_3489" ;
+	rdfs:subClassOf :databases ;
+	skos:exactMatch "http://dbpedia.org/resource/Relational_database" ;
+	skos:relatedMatch "http://edamontology.org/format_3788" .
+# 
+# http://bigdatau.org/dseo#reproducibility
+
+:reproducibility a owl:Class ;
+	rdfs:comment "Presenting data and/or analysis in format that can be comprehended by and reproduced for stakeholders; can include anything related to reporting, building dashboards, creating data products, or repository sharing for analysis code" ;
+	rdfs:label "Reproducibility" ;
+	rdfs:subClassOf :data_science_process ;
+	skos:exactMatch "http://dbpedia.org/resource/Reproducibility" ;
+	skos:relatedMatch "http://edamontology.org/topic_0769" .
+# 
+# http://bigdatau.org/dseo#research_methodology
+
+:research_methodology a owl:Class ;
+	rdfs:comment "Design of procedures for experiments in medicine and healthcare; often applies to design of clinical trials" ;
+	rdfs:label "Research Methodology" ;
+	skos:broadMatch "http://dbpedia.org/resource/Methodology" , "http://dbpedia.org/resource/Research" , "http://edamontology.org/topic_3678" ;
+	rdfs:subClassOf :medicine_healthcare .
+# 
+# http://bigdatau.org/dseo#resource_depth
+
+:resource_depth a owl:Class ;
+	rdfs:comment "is a dimension name; difficulty of a resource" ;
+	rdfs:label "Resource Depth" .
+# 
+# http://bigdatau.org/dseo#resource_format
+
+:resource_format a owl:Class ;
+	rdfs:comment "is a dimension name; how a resource is presented and the format in which a learner interacts with it" ;
+	rdfs:label "Resource Format" .
+# 
+# http://bigdatau.org/dseo#security
+
+:security a owl:Class ;
+	rdfs:comment "Study and application of methods for protecting computing and data systems" ;
+	rdfs:label "Security" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Computer_security" ;
+	skos:narrowMatch "http://edamontology.org/topic_3263" .
+# 
+# http://bigdatau.org/dseo#semantic_web
+
+:semantic_web a owl:Class ;
+	rdfs:comment "Framework for enabling the sharing data across the Web for machine consumption, digestion, and reuse" ;
+	rdfs:label "Semantic Web" ;
+	rdfs:subClassOf :computer_science ;
+	skos:exactMatch "http://dbpedia.org/resource/Semantic_Web" ;
+	skos:narrowMatch "http://edamontology.org/format_3748" ;
+	skos:relatedMatch "http://edamontology.org/format_2195" , "http://edamontology.org/topic_0089" .
+# 
+# http://bigdatau.org/dseo#sensor_networks_iot
+
+:sensor_networks_iot a owl:Class ;
+	rdfs:comment "Study and design of inter-networking between multiple connected objects" ;
+	rdfs:label "Sensor Networks/IoT" ;
+	rdfs:subClassOf :computer_science ;
+	skos:narrowMatch "http://dbpedia.org/resource/Internet_of_things" , "http://dbpedia.org/resource/Wireless_sensor_network" .
+# 
+# http://bigdatau.org/dseo#signal_processing
+
+:signal_processing a owl:Class ;
+	rdfs:comment "Methods that encompasses the fundamental theory, applications, algorithms, and implementations of processing or transferring information contained in many different physical, symbolic, or abstract formats broadly designated as signals" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Signal_processing" ;
+	rdfs:label "Signal Processing" ;
+	rdfs:subClassOf :computer_science , :engineering ;
+	skos:exactMatch "http://dbpedia.org/resource/Signal_processing" .
+# 
+# http://bigdatau.org/dseo#social_media_analysis
+
+:social_media_analysis a owl:Class ;
+	rdfs:comment "Use of text and graph based analyses to measure transmission and propogation of information in social media" ;
+	rdfs:label "Social Media Analysis" ;
+	rdfs:subClassOf :computer_science , :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/Social_media_analytics" .
+# 
+# http://bigdatau.org/dseo#social_sciences_humanities
+
+:social_sciences_humanities a owl:Class ;
+	rdfs:comment "Study of people and their interactions with each other, which includes the development and progress of society and culture" ;
+	rdfs:label "Social Sciences/Humanities" ;
+	rdfs:subClassOf :domain ;
+	skos:narrowMatch "http://dbpedia.org/resource/Humanities" , "http://dbpedia.org/resource/Social_science" .
+# 
+# http://bigdatau.org/dseo#sociology
+
+:sociology a owl:Class ;
+	rdfs:comment "The study of society and the members and interactions that form it" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Sociology" ;
+	rdfs:label "Sociology" ;
+	rdfs:subClassOf :social_sciences_humanities ;
+	skos:exactMatch "http://dbpedia.org/resource/Sociology" .
+# 
+# http://bigdatau.org/dseo#spatial_data
+
+:spatial_data a owl:Class ;
+	rdfs:comment "Data representing objects defined in a geometric space" ;
+	rdfs:label "Spatial Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:narrowMatch "http://dbpedia.org/resource/Geographic_data_and_information" , "http://dbpedia.org/resource/Spatial_database" ;
+	skos:relatedMatch "http://dbpedia.org/resource/Spatial_analysis" , "http://dbpedia.org/resource/Spatial_data_infrastructure" .
+# 
+# http://bigdatau.org/dseo#stochastic_processes
+
+:stochastic_processes a owl:Class ;
+	rdfs:comment "Processes involving random variables that are associated with or indexed by a set of numbers" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Stochastic_process" ;
+	rdfs:label "Stochastic Processes" ;
+	skos:broadMatch "http://edamontology.org/operation_3658" , "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :probability_statistics ;
+	skos:exactMatch "http://dbpedia.org/resource/Stochastic_process" .
+# 
+# http://bigdatau.org/dseo#streaming_data
+
+:streaming_data a owl:Class ;
+	rdfs:comment "Data generated continuously and at a large scale, where samples need to be extracted and analyzed; contains a time-based component" ;
+	rdfs:isDefinedBy "https://aws.amazon.com/streaming-data/" ;
+	rdfs:label "Streaming Data" ;
+	skos:broadMatch "http://dbpedia.org/resource/Streaming_data" ;
+	rdfs:subClassOf :datatype .
+# 
+# http://bigdatau.org/dseo#structural_biology
+
+:structural_biology a owl:Class ;
+	rdfs:comment "Study of molecular structures of biological macromolecules" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Structural_biology" ;
+	rdfs:label "Structural Biology" ;
+	rdfs:subClassOf :biology ;
+	skos:exactMatch "http://dbpedia.org/resource/Structural_biology" , "http://edamontology.org/topic_1317" .
+# 
+# http://bigdatau.org/dseo#supervised_learning
+
+:supervised_learning a owl:Class ;
+	rdfs:comment "Machine learning techniques that draw inferences from labeled data" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Supervised_learning" ;
+	rdfs:label "Supervised Learning" ;
+	skos:broadMatch "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Supervised_learning" .
+# 
+# http://bigdatau.org/dseo#tabular_data
+
+:tabular_data a owl:Class ;
+	rdfs:comment "Data arranged in a tabular (rows+columns) format; includes, but not limited to, CSV, TSV, Excel files, and relational tables" ;
+	rdfs:label "Tabular Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:closeMatch "http://dbpedia.org/resource/Delimiter-separated_values" , "http://dbpedia.org/resource/Table_(information)" ;
+	skos:exactMatch "http://edamontology.org/format_3751" .
+# 
+# http://bigdatau.org/dseo#text_data
+
+:text_data a owl:Class ;
+	rdfs:comment "Data extracted from documents and used for information retrieval and natural language processing; consists of words" ;
+	rdfs:label "Text Data" ;
+	skos:broadMatch "http://dbpedia.org/resource/Plain_text" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://edamontology.org/data_2526" .
+# 
+# http://bigdatau.org/dseo#time_series_data
+
+:time_series_data a owl:Class ;
+	rdfs:comment "Data that captured over successive points in time" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Time_series" ;
+	rdfs:label "Time Series Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:exactMatch "http://dbpedia.org/resource/Time_series" .
+# 
+# http://bigdatau.org/dseo#topic_model
+
+:topic_model a owl:Class ;
+	rdfs:comment "Describes machine learning techniques such as Latent Dirichlet allocation (LDA) where topics are discovered from bodies of text" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Topic_model" ;
+	rdfs:label "Topic Model" ;
+	rdfs:subClassOf :probabilistic_graphical_model ;
+	skos:exactMatch "http://dbpedia.org/resource/Topic_model" ;
+	skos:relatedMatch "http://edamontology.org/data_1347" .
+# 
+# http://bigdatau.org/dseo#Unix_Linux
+
+:Unix_Linux a owl:Class ;
+	rdfs:comment "Families of multitasking, multiuser computer operating systems that either derive from the original AT&T Unix or are designed to operate in a way similar to that of Unix" ;
+	rdfs:label "Unix/Linux" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:narrowMatch "http://dbpedia.org/resource/Linux" , "http://dbpedia.org/resource/Unix" ;
+	skos:relatedMatch "http://edamontology.org/data_2131" .
+# 
+# http://bigdatau.org/dseo#unsupervised_learning
+
+:unsupervised_learning a owl:Class ;
+	rdfs:comment "Machine learning methods describe the features of unlabeled data; includes clustering and dimensionality reduction techniques" ;
+	rdfs:isDefinedBy "http://dbpedia.org/resource/Unsupervised_learning" ;
+	rdfs:label "Unsupervised Learning" ;
+	skos:broadMatch "http://edamontology.org/topic_2269" , "http://edamontology.org/topic_3474" ;
+	rdfs:subClassOf :machine_learning ;
+	skos:exactMatch "http://dbpedia.org/resource/Unsupervised_learning" .
+# 
+# http://bigdatau.org/dseo#video
+
+:video a owl:Class ;
+	rdfs:comment "A recorded video that a learner can watch and playback" ;
+	rdfs:label "Video" ;
+	rdfs:subClassOf :resource_format ;
+	skos:exactMatch "http://dbpedia.org/resource/Video" ;
+	skos:relatedMatch "http://edamontology.org/data_3670" .
+# 
+# http://bigdatau.org/dseo#video_data
+
+:video_data a owl:Class ;
+	rdfs:comment "Data from moving images" ;
+	rdfs:label "Video Data" ;
+	rdfs:subClassOf :datatype ;
+	skos:closeMatch "http://dbpedia.org/resource/Digital_video" .
+# 
+# http://bigdatau.org/dseo#written_documents
+
+:written_documents a owl:Class ;
+	rdfs:comment "Any pedagogical written material; includes (but not limited to) written webpages, slides, and books" ;
+	rdfs:label "Written Documents" ;
+	rdfs:subClassOf :resource_format ;
+	skos:closeMatch "http://dbpedia.org/resource/Document" ;
+	skos:narrowMatch "http://edamontology.org/data_0971" , "http://edamontology.org/data_2048" , "http://edamontology.org/data_2849" , "http://edamontology.org/data_3779" ;
+	skos:relatedMatch "http://edamontology.org/data_3670" , "http://edamontology.org/format_3507" .
+# 
+# http://bigdatau.org/dseo#C_C++
+
+<http://bigdatau.org/dseo#C_C++> a owl:Class ;
+	rdfs:comment "general purpose programming languages used often for system programming because of its low level access abilities; used often to write applications in high performance computing" ;
+	rdfs:label "C/C++" ;
+	rdfs:seeAlso "https://isocpp.org/" ;
+	rdfs:subClassOf :programming_tool ;
+	skos:narrowMatch "http://dbpedia.org/resource/C%2B%2B" , "http://dbpedia.org/resource/C_(programming_language)" .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

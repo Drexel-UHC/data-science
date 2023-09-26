@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://example.org/neighborhoods#> .
+
+:Neighborhood a owl:Class ;
+    rdfs:label "Neighborhood" ;
+    rdfs:comment "A geographic area defined for urban planning or similar purposes." .
+
+:hasName a owl:DatatypeProperty ;
+    rdfs:label "has name" ;
+    rdfs:domain :Neighborhood ;
+    rdfs:range xsd:string .
+
+:hasMetric a owl:ObjectProperty ;
+    rdfs:label "has metric" ;
+    rdfs:domain :Neighborhood ;
+    rdfs:range :Metric .
+
+:Metric a owl:Class ;
+    rdfs:label "Metric" ;
+    rdfs:comment "A measure of some attribute of a neighborhood." .
+
+:hasValue a owl:DatatypeProperty ;
+    rdfs:label "has value" ;
+    rdfs:domain :Metric ;
+    rdfs:range xsd:decimal .
+
+:hasDate a owl:DatatypeProperty ;
+    rdfs:label "has date" ;
+    rdfs:domain :Metric ;
+    rdfs:range xsd:date .
+
+:Neighborhood1 a :Neighborhood ;
+    :hasName "Downtown" ;
+    :hasMetric :Metric1 .
+
+:Metric1 a :Metric ;
+    :hasValue 7.5 ;
+    :hasDate "2023-06-27"^^xsd:date .

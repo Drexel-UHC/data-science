@@ -1,0 +1,280 @@
+@prefix : <http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/> .
+
+<http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/IMDB
+:IMDB rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasActor
+:hasActor rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasCountryOrigin
+:hasCountryOrigin rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasDirector
+:hasDirector rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasFranchise
+:hasFranchise rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasSeries
+:hasSeries rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasMovieNumber
+:hasMovieNumber rdf:type owl:DatatypeProperty ;
+                rdfs:comment "This is for movies that are in seiries to identify order. E.g. Fast Furious 1, 2, ... etc" .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/hasSeason
+:hasSeason rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TV_episode ;
+           rdfs:range xsd:int ;
+           rdfs:comment "This is attached to tv episodes to indicate season. INteresting to see if class wants to track season_n as a class/individual or just as a integer/data!" .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/releaseOn
+:releaseOn rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Movie ,
+                       :TV_episode ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "Applicable to most content and indicates when the content was intiialiy broadcast. For movies it would be the public release date." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Credits .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Content
+:Content rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Content_Metadata
+:Content_Metadata rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Credits
+:Credits rdf:type owl:Class ;
+         rdfs:subClassOf :Content_Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Credits ;
+          rdfs:comment "Name of the directory"@en .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Documentary
+:Documentary rdf:type owl:Class ;
+             rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Fantasy
+:Fantasy rdf:type owl:Class ;
+         rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Franchise
+:Franchise rdf:type owl:Class ;
+           rdfs:subClassOf :Production .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Genre
+:Genre rdf:type owl:Class ;
+       rdfs:subClassOf :Content_Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Horror
+:Horror rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Language
+:Language rdf:type owl:Class ;
+          rdfs:subClassOf :Content_Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Movie
+:Movie rdf:type owl:Class ;
+       rdfs:subClassOf :Content .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Origin
+:Origin rdf:type owl:Class ;
+        rdfs:subClassOf :Content_Metadata ;
+        rdfs:comment "Country from which content is from" .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Production
+:Production rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf :Content_Metadata ;
+        rdfs:comment "Repeates which season a tv show episode belongs to" .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Series
+:Series rdf:type owl:Class ;
+        rdfs:subClassOf :Content_Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Sport
+:Sport rdf:type owl:Class ;
+       rdfs:subClassOf :Content_Metadata .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Sports
+:Sports rdf:type owl:Class ;
+        rdfs:subClassOf :Content .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Studio
+:Studio rdf:type owl:Class ;
+        rdfs:subClassOf :Production .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/TV_episode
+:TV_episode rdf:type owl:Class ;
+            rdfs:subClassOf :Content .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8#Football
+:Football rdf:type owl:NamedIndividual ,
+                   :Sport .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8#Soccer
+:Soccer rdf:type owl:NamedIndividual ,
+                 :Sport .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/BR
+:BR rdf:type owl:NamedIndividual ,
+             :Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Chris_Columbus
+:Chris_Columbus rdf:type owl:NamedIndividual ,
+                         :Director .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Disney
+:Disney rdf:type owl:NamedIndividual ,
+                 :Studio .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Emma_Watson
+:Emma_Watson rdf:type owl:NamedIndividual ,
+                      :Actor .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/English
+:English rdf:type owl:NamedIndividual ,
+                  :Language .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Harry_Potter
+:Harry_Potter rdf:type owl:NamedIndividual ,
+                       :Franchise .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Harry_Potter_1
+:Harry_Potter_1 rdf:type owl:NamedIndividual ,
+                         :Content ;
+                :releaseOn "2002-05-30T09:00:00"^^xsd:dateTime ;
+                rdfs:label "Harry Potter and the Sorcerer Stone" .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Harry_Potter_and_the_Chamber_of_Secrets
+:Harry_Potter_and_the_Chamber_of_Secrets rdf:type owl:NamedIndividual ;
+                                         rdfs:label "Harry Potter and the Chamber of Secrets"@en .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Marvel_Cinematic_Universe
+:Marvel_Cinematic_Universe rdf:type owl:NamedIndividual ,
+                                    :Franchise .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/NFL
+:NFL rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/PE
+:PE rdf:type owl:NamedIndividual ,
+             :Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Spanish
+:Spanish rdf:type owl:NamedIndividual ,
+                  :Language .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/UK
+:UK rdf:type owl:NamedIndividual ,
+             :Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/US
+:US rdf:type owl:NamedIndividual ,
+             :Origin .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Universal
+:Universal rdf:type owl:NamedIndividual ,
+                    :Studio .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/Warner_Bros
+:Warner_Bros rdf:type owl:NamedIndividual ,
+                      :Studio .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/XFL
+:XFL rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/el_candidato
+:el_candidato rdf:type owl:NamedIndividual ,
+                       :TV_episode .
+
+
+###  http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-8/nfl_2023_superbowl
+:nfl_2023_superbowl rdf:type owl:NamedIndividual ;
+                    rdfs:label "Feb 12 2023 Eagles vs Chiefs." .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

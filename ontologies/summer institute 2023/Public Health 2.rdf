@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/"
+     xml:base="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19">
+        <rdfs:comment>Public Hleath ontology put together at the UHC 2023 SUmmer Institute course on FAIR and CARE principles.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/mayAffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/mayAffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Determinants_of_Health"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Aerial_Photography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Aerial_Photography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geographical_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Origin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Origin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Source -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Source">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset_Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset_Description">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset_Version -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset_Version">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Dataset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Derived -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Derived">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Origin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#FASTD_Survey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#FASTD_Survey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Survey_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#GIS_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#GIS_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geographical_Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geographical_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geographical_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geonomic_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Geonomic_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Metadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Metadata"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation_Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation_Time">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Primary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Primary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Origin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Q1za_recomendations_on_donuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Q1za_recomendations_on_donuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#FASTD_Survey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Q2Xa_best_tacos_in_city -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Q2Xa_best_tacos_in_city">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#FASTD_Survey"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Quantitative_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Quantitative_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Secondary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Secondary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Data_Origin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Survey_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Survey_Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data"/>
+        <rdfs:comment>This section of ontlogy was inspired by the 	Logical Observation Identifier Names and Codes (LOINC) ontology. It has really great way of conceptualizing biomedical and survey data. 
+
+
+https://bioportal.bioontology.org/ontologies/LOINC/?p=classes&amp;conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FLNC%2FMTHU000004</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Metadata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable_Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable_Description">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Variable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Health_Commissioner&apos;s_Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Health_Commissioner&apos;s_Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Maternal,_Child,_and_Family_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Maternal,_Child,_and_Family_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Medical_Examiner&apos;s_Office -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19#Medical_Examiner&apos;s_Office">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Air_Management_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Air_Management_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Air_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Air_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Determinants_of_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Ambulatory_Health_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Ambulatory_Health_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Spatial_Scope"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Spatial_Scope"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Chronic_Disease_and_Injury_Prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Chronic_Disease_and_Injury_Prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Cold_Turkey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Cold_Turkey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Smoking_Cessation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Community_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Community_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Research_Domains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Determinants_of_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Determinants_of_Health"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome"/>
+        <rdfs:comment>A disease refers to a pathological condition or disorder that affects the normal functioning of an organism. It involves an abnormal physiological or structural alteration in the body or its organs, tissues, or cells. Diseases can have various causes, such as infections, genetic factors, environmental factors, or a combination of these. Examples of diseases include influenza, diabetes, cancer, malaria, and asthma. Diseases are often characterized by specific signs, symptoms, and diagnostic criteria.</rdfs:comment>
+        <rdfs:comment>In the context of crafting a public health ontology, it&apos;s important to establish clear definitions for terms like &quot;disease&quot; and &quot;illness.&quot; While these terms are sometimes used interchangeably in everyday language, they can have distinct meanings within the field of healthcare. Here&apos;s a general differentiation:
+
+To summarize, disease is typically used to describe a specific pathological condition or disorder, while illness refers to the overall experience and perception of being unwell. Including both concepts in a public health ontology can help capture the different aspects of health and provide a comprehensive understanding of the field.</rdfs:comment>
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Drexel_Urban_Health_Collaborative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Drexel_Urban_Health_Collaborative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Determinants_of_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Determinants_of_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Determinants_of_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Health_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Health_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/HIV_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/HIV_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Equity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Equity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Research_Domains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Human_Resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Human_Resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Illness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Illness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome"/>
+        <rdfs:comment xml:lang="en">Illness, on the other hand, is a broader term than disease that encompasses a person&apos;s subjective experience of being unwell. It refers to the perception and experience of being sick, including the physical, emotional, and social aspects. Illness can encompass the symptoms, pain, discomfort, and distress that a person experiences due to a disease. It is influenced by factors such as individual perception, cultural beliefs, and social context. Illness may or may not be associated with a diagnosable disease.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Immigrant_Population -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Immigrant_Population">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Interventions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Interventions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Laboratory_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Laboratory_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Maternal_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Maternal_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Mental_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Mental_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Health_Outcome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Nicotine_Patch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Nicotine_Patch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Smoking_Cessation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Organization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Philadelphia_Department_of_Public_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Philadelphia_Department_of_Public_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_age -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_age">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_employment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_employment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_sex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_by_sex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_with_mgiration_background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/People_with_mgiration_background">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Philadelphia_Department_of_Public_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Philadelphia_Department_of_Public_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Research_Domains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Research_Domains -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Research_Domains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Smoking_Cessation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Smoking_Cessation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Interventions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Social_Determinants_of_Health -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Social_Determinants_of_Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Determinants_of_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Spatial_Scope -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Spatial_Scope"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Substance_Use_Prevention_and_Harm_Reduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Substance_Use_Prevention_and_Harm_Reduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/PDPH_Departments"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Target_group_of_policy_intervention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Target_group_of_policy_intervention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Population_Groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Trauma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Trauma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Mental_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Vaccines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Vaccines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Interventions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Water_Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Water_Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Environmental_Determinants_of_Health"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_county -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_county">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+        <rdfs:comment xml:lang="en">Census region.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_tract -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_tract">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_zcta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/census_zcta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/chronic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/chronic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/covid-19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/covid-19">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/home_care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/home_care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/hospital_care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/hospital_care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/informal_care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/informal_care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/nursing_home_care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/nursing_home_care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/outpatient_care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/outpatient_care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Care_Setting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/parcel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/parcel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/rural -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/rural">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/spatial_categorizations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/spatial_categorizations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/spatial_categorizations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/std -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/std">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/virus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/suburban -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/suburban">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/spatial_categorizations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/urban -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/urban">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/spatial_categorizations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/virus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/virus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/zip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/zip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ranli/ontologies/2023/5/untitled-ontology-19/Area"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
