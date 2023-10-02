@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MD_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<language>
+<LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+</language>
+<characterSet>
+<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+</characterSet>
+<hierarchyLevel>
+<MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+</hierarchyLevel>
+<hierarchyLevelName>
+<gco:CharacterString>dataset</gco:CharacterString>
+</hierarchyLevelName>
+<contact>
+<CI_ResponsibleParty>
+<individualName>
+<gco:CharacterString>Steven Melly</gco:CharacterString>
+</individualName>
+<organisationName>
+<gco:CharacterString>Urban Health Collaborative Dornsife School of Public Health Drexel University</gco:CharacterString>
+</organisationName>
+<positionName>
+<gco:CharacterString>GIS Analyst</gco:CharacterString>
+</positionName>
+<contactInfo>
+<CI_Contact>
+<address>
+<CI_Address>
+<deliveryPoint>
+<gco:CharacterString>3600 Market St Room 704</gco:CharacterString>
+</deliveryPoint>
+<city>
+<gco:CharacterString>Philadelphia</gco:CharacterString>
+</city>
+<administrativeArea>
+<gco:CharacterString>PA</gco:CharacterString>
+</administrativeArea>
+<postalCode>
+<gco:CharacterString>19104</gco:CharacterString>
+</postalCode>
+<country>
+<Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+</country>
+</CI_Address>
+</address>
+</CI_Contact>
+</contactInfo>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor" codeSpace="ISOTC211/19115">processor</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</contact>
+<dateStamp>
+<gco:Date>2023-09-22</gco:Date>
+</dateStamp>
+<metadataStandardName>
+<gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+</metadataStandardName>
+<metadataStandardVersion>
+<gco:CharacterString>2007</gco:CharacterString>
+</metadataStandardVersion>
+<spatialRepresentationInfo>
+<MD_VectorSpatialRepresentation>
+<topologyLevel>
+<MD_TopologyLevelCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_TopologyLevelCode" codeListValue="geometryOnly" codeSpace="ISOTC211/19115">geometryOnly</MD_TopologyLevelCode>
+</topologyLevel>
+<geometricObjects>
+<MD_GeometricObjects>
+<geometricObjectType>
+<MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" codeSpace="ISOTC211/19115">composite</MD_GeometricObjectTypeCode>
+</geometricObjectType>
+<geometricObjectCount>
+<gco:Integer>371</gco:Integer>
+</geometricObjectCount>
+</MD_GeometricObjects>
+</geometricObjects>
+</MD_VectorSpatialRepresentation>
+</spatialRepresentationInfo>
+<referenceSystemInfo>
+<MD_ReferenceSystem>
+<referenceSystemIdentifier>
+<RS_Identifier>
+<code>
+<gco:CharacterString>4326</gco:CharacterString>
+</code>
+<codeSpace>
+<gco:CharacterString>EPSG</gco:CharacterString>
+</codeSpace>
+<version>
+<gco:CharacterString>6.2(3.0.1)</gco:CharacterString>
+</version>
+</RS_Identifier>
+</referenceSystemIdentifier>
+</MD_ReferenceSystem>
+</referenceSystemInfo>
+<identificationInfo>
+<MD_DataIdentification>
+<citation>
+<CI_Citation>
+<title>
+<gco:CharacterString>SALURBAL_L1AD_WithIslands_PublicIDs</gco:CharacterString>
+</title>
+<date gco:nilReason="missing">
+</date>
+<citedResponsibleParty>
+<CI_ResponsibleParty>
+<individualName>
+<gco:CharacterString>Steven Melly</gco:CharacterString>
+</individualName>
+<organisationName>
+<gco:CharacterString>Urban Health Collaborative Dornsife School of Public Health Drexel University</gco:CharacterString>
+</organisationName>
+<positionName>
+<gco:CharacterString>GIS Analyst</gco:CharacterString>
+</positionName>
+<contactInfo>
+<CI_Contact>
+<address>
+<CI_Address>
+<deliveryPoint>
+<gco:CharacterString>3600 Market St Room 704</gco:CharacterString>
+</deliveryPoint>
+<city>
+<gco:CharacterString>Philadelphia</gco:CharacterString>
+</city>
+<administrativeArea>
+<gco:CharacterString>PA</gco:CharacterString>
+</administrativeArea>
+<postalCode>
+<gco:CharacterString>19104</gco:CharacterString>
+</postalCode>
+<country>
+<Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+</country>
+<electronicMailAddress>
+<gco:CharacterString>sjm389@drexel.edu</gco:CharacterString>
+</electronicMailAddress>
+</CI_Address>
+</address>
+</CI_Contact>
+</contactInfo>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor" codeSpace="ISOTC211/19115">processor</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</citedResponsibleParty>
+<presentationForm>
+<CI_PresentationFormCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode" codeListValue="mapDigital" codeSpace="ISOTC211/19115">mapDigital</CI_PresentationFormCode>
+</presentationForm>
+</CI_Citation>
+</citation>
+<abstract>
+<gco:CharacterString>Level 1 AD (L1AD) areas created by dissolving SALURBAL L2 areas by SALID1. L1AD areas are metropolitan areas defined by administrative boundaries that can be linked to population and mortality data. Attributes include higher administrative areas that contain L1ADs (adm1_name, adm2_name). adm2_name is missing if a country's second level administrative area is the same as the SALURBAL area.8/3/23 L2 areas had topology corrected to remove overlaps and vertex outliersExcept for topology corrections boundaries are as received from authoritative sources and include off shore islands and small islands. </gco:CharacterString>
+</abstract>
+<purpose>
+<gco:CharacterString>SALURBAL Level 1 AD areas</gco:CharacterString>
+</purpose>
+<credit>
+<gco:CharacterString>SALURBAL Urban Health Collaborative Dornsife School of Public Health Drexel University
+Quistberg, D. A., Diez Roux, A. V., Bilal, U., Moore, K., Ortigoza, A., Rodriguez, D. A., Sarmiento, O. L., Frenz, P., Friche, A. A., Caiaffa, W. T., Vives, A., &amp; Miranda, J. J. (2019). Building a Data Platform for Cross-Country Urban Health Studies: the SALURBAL Study. Journal of Urban Health, 96(2), 311-337. https://doi.org/10.1007/s11524-018-00326-0</gco:CharacterString>
+</credit>
+<pointOfContact>
+<CI_ResponsibleParty>
+<individualName>
+<gco:CharacterString>Steven Melly</gco:CharacterString>
+</individualName>
+<organisationName>
+<gco:CharacterString>Urban Health Collaborative Dornsife School of Public Health Drexel University</gco:CharacterString>
+</organisationName>
+<positionName>
+<gco:CharacterString>GIS Analyst</gco:CharacterString>
+</positionName>
+<contactInfo>
+<CI_Contact>
+<address>
+<CI_Address>
+<deliveryPoint>
+<gco:CharacterString>3600 Market St Room 704</gco:CharacterString>
+</deliveryPoint>
+<city>
+<gco:CharacterString>Philadelphia</gco:CharacterString>
+</city>
+<administrativeArea>
+<gco:CharacterString>PA</gco:CharacterString>
+</administrativeArea>
+<postalCode>
+<gco:CharacterString>19104</gco:CharacterString>
+</postalCode>
+<country>
+<Country codeList="http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm" codeListValue="US" codeSpace="ISO3166-1">US</Country>
+</country>
+</CI_Address>
+</address>
+</CI_Contact>
+</contactInfo>
+<role>
+<CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="processor" codeSpace="ISOTC211/19115">processor</CI_RoleCode>
+</role>
+</CI_ResponsibleParty>
+</pointOfContact>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Urban Health</gco:CharacterString>
+</keyword>
+<keyword>
+<gco:CharacterString>Latin America</gco:CharacterString>
+</keyword>
+</MD_Keywords>
+</descriptiveKeywords>
+<descriptiveKeywords>
+<MD_Keywords>
+<keyword>
+<gco:CharacterString>Downloadable Data</gco:CharacterString>
+</keyword>
+<thesaurusName uuidref="723f6998-058e-11dc-8314-0800200c9a66">
+</thesaurusName>
+</MD_Keywords>
+</descriptiveKeywords>
+<spatialRepresentationType>
+<MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" codeSpace="ISOTC211/19115">vector</MD_SpatialRepresentationTypeCode>
+</spatialRepresentationType>
+<language>
+<LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+</language>
+<characterSet>
+<MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+</characterSet>
+<environmentDescription>
+<gco:CharacterString>Microsoft Windows 10 Version 10.0 (Build 19045) ; Esri ArcGIS 13.1.2.41833</gco:CharacterString>
+</environmentDescription>
+<extent>
+<EX_Extent>
+<description>
+<gco:CharacterString>SALURBAL Cities circa 2010. Date of source boundaries varies by country</gco:CharacterString>
+</description>
+<geographicElement>
+<EX_GeographicBoundingBox>
+<extentTypeCode>
+<gco:Boolean>true</gco:Boolean>
+</extentTypeCode>
+<westBoundLongitude>
+<gco:Decimal>-137.162811</gco:Decimal>
+</westBoundLongitude>
+<eastBoundLongitude>
+<gco:Decimal>-28.103289</gco:Decimal>
+</eastBoundLongitude>
+<southBoundLatitude>
+<gco:Decimal>-54.49992</gco:Decimal>
+</southBoundLatitude>
+<northBoundLatitude>
+<gco:Decimal>32.718654</gco:Decimal>
+</northBoundLatitude>
+</EX_GeographicBoundingBox>
+</geographicElement>
+</EX_Extent>
+</extent>
+<extent>
+<EX_Extent>
+<geographicElement>
+<EX_GeographicBoundingBox>
+<extentTypeCode>
+<gco:Boolean>true</gco:Boolean>
+</extentTypeCode>
+<westBoundLongitude>
+<gco:Decimal>-118.40765</gco:Decimal>
+</westBoundLongitude>
+<eastBoundLongitude>
+<gco:Decimal>-28.835908</gco:Decimal>
+</eastBoundLongitude>
+<southBoundLatitude>
+<gco:Decimal>-54.49992</gco:Decimal>
+</southBoundLatitude>
+<northBoundLatitude>
+<gco:Decimal>32.718654</gco:Decimal>
+</northBoundLatitude>
+</EX_GeographicBoundingBox>
+</geographicElement>
+</EX_Extent>
+</extent>
+</MD_DataIdentification>
+</identificationInfo>
+<distributionInfo>
+<MD_Distribution>
+<distributionFormat>
+<MD_Format>
+<name>
+<gco:CharacterString>File Geodatabase Feature Class</gco:CharacterString>
+</name>
+<version gco:nilReason="missing">
+</version>
+</MD_Format>
+</distributionFormat>
+</MD_Distribution>
+</distributionInfo>
+</MD_Metadata>
