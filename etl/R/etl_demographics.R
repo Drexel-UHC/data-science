@@ -22,7 +22,14 @@ etl_demographics = function(geo_tmp,
           select(geo, geoid, year, everything())
       })
   
+  df_clean = dfa %>% 
+    mutate( pct_hisp = race_hisp/race_total,
+            pct_black = race_black/race_total,
+            pct_nhwhite = race_nhw/race_total,
+            pct_female = sex_female/pop,
+            pct_male = (pop-sex_female)/pop) %>% 
+    select(geo, geoid, year, pop, contains('pct_') )
 
   
-  return(dfa)
+  return(df_clean)
 }

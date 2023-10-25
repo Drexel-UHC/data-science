@@ -4,8 +4,17 @@
 { # Parameters -------------------------------------------------------------------
   
   list__variables = lst(
-    pop = "B01003_001",
-    median_age = "B01002_001"
+    pop = "B01001_001",
+    median_age = "B01002_001",
+    #sex (total, female)
+    sex_total = "B01001_001", 
+    sex_female = "B01001_026", 
+    #race/ethnicity (total,NH white, NH black, hispanic), 
+    race_total = "B03002_001", 
+    race_nhw = "B03002_003", 
+    race_black = "B03002_012", 
+    race_hisp = "B03002_004",
+   
   )
   
   vec__years = 2009:2020
