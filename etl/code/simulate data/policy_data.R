@@ -19,7 +19,8 @@
              mask_start,
              stay_start) %>% 
       distinct() %>% 
-      pivot_longer(cols = c('mask_start','stay_start')) 
+      pivot_longer(cols = c('mask_start','stay_start')) %>% 
+      mutate(name = name %>% str_remove('_start') %>% paste('covid',.))
     
     df_covid_policy = df_covid_policy_raw2 %>% 
       rowwise() %>% 

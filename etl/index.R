@@ -16,6 +16,7 @@
     library(geojsonio)
     library(tidycensus)     ## Others
     library(cli)
+    library(uuid)
   }
    
   { ## Internal dependencies ---------------------------------------------------
