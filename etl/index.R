@@ -5,6 +5,7 @@
     library(arrow)
     library(jsonlite)
     library(dplyr)          ## Functional programming
+    library(tidyr)
     library(stringr)
     library(purrr)
     library(sf)             ## Spatial
