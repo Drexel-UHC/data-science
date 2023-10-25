@@ -36,6 +36,8 @@
   "code/demographics/demographics.R"
   "code/crosswalks/crosswalks.R"
   "code/spatial/spatial.R"
+  "code/simulate data/health_outcomes.R"
+  "code/simulate data/policy_data.R"
 }
 
 
