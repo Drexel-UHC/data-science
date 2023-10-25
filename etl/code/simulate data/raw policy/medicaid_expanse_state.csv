@@ -1,0 +1,52 @@
+"","state_name","state_fips","topic","policy_details","policy_value","date_effective","date_end","comments","citations"
+"1","Alabama",1,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"2","Alaska",2,"medicaid","state medicaid expansion",1,2015-09-01,NA,NA,NA
+"3","Arizona",4,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"4","Arkansas",5,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"5","California",6,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"6","Colorado",8,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"7","Connecticut",9,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"8","Delaware",10,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"9","District of Columbia",11,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"10","Florida",12,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"11","Georgia",13,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"12","Hawaii",15,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"13","Idaho",16,"medicaid","state medicaid expansion",1,2020-01-01,NA,NA,NA
+"14","Illinois",17,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"15","Indiana",18,"medicaid","state medicaid expansion",1,2015-02-01,NA,NA,NA
+"16","Iowa",19,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"17","Kansas",20,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"18","Kentucky",21,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"19","Louisiana",22,"medicaid","state medicaid expansion",1,2016-07-01,NA,NA,NA
+"20","Maine",23,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"21","Maryland",24,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"22","Massachusetts",25,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"23","Michigan",26,"medicaid","state medicaid expansion",1,2014-04-01,NA,NA,NA
+"24","Minnesota",27,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"25","Mississippi",28,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"26","Missouri",29,"medicaid","state medicaid expansion",1,2021-10-01,NA,NA,NA
+"27","Montana",30,"medicaid","state medicaid expansion",1,2016-01-01,NA,NA,NA
+"28","Nebraska",31,"medicaid","state medicaid expansion",1,2020-10-01,NA,NA,NA
+"29","Nevada",32,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"30","New Hampshire",33,"medicaid","state medicaid expansion",1,2014-08-15,NA,NA,NA
+"31","New Jersey",34,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"32","New Mexico",35,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"33","New York",36,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"34","North Carolina",37,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"35","North Dakota",38,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"36","Ohio",39,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"37","Oklahoma",40,"medicaid","state medicaid expansion",1,2021-07-01,NA,NA,NA
+"38","Oregon",41,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"39","Pennsylvania",42,"medicaid","state medicaid expansion",1,2015-01-01,NA,NA,NA
+"40","Rhode Island",44,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"41","South Carolina",45,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"42","South Dakota",46,"medicaid","state medicaid expansion",1,2023-07-01,NA,NA,NA
+"43","Tennessee",47,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"44","Texas",48,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"45","Utah",49,"medicaid","state medicaid expansion",1,2020-01-01,NA,NA,NA
+"46","Vermont",50,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"47","Virginia",51,"medicaid","state medicaid expansion",1,2019-01-01,NA,NA,NA
+"48","Washington",53,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"49","West Virginia",54,"medicaid","state medicaid expansion",1,2014-01-01,NA,NA,NA
+"50","Wisconsin",55,"medicaid","state medicaid expansion",0,NA,NA,NA,NA
+"51","Wyoming",56,"medicaid","state medicaid expansion",0,NA,NA,NA,NA

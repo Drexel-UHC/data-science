@@ -1,0 +1,52 @@
+"","state_name","state_fips","topic","policy_details","exists_tf","value_num","value_char","date_effective","end_date","comments","citations"
+"1","Alabama","01","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"2","Alaska","02","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"3","Arizona","04","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Ariz. Rev. Stat. Sec. 23-372)"
+"4","Arkansas","05","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"5","California","06","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Cal. Lab. Code Sec. 246)"
+"6","Colorado","08","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Colo. Rev. Stat. Sec. 8-13.3-403)"
+"7","Connecticut","09","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,"( Caution: Earned sick leave applies to service workers as defined in Conn. Gen. Stat. Sec. 31-57r(7). Includes over 65 varied kinds of employees (social workers, hosts and hostesses, office clerks, butchers, etc.) )","(Conn. Gen. Stat.  31-57r(7))"
+"8","Delaware","10","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"9","District of Columbia","11","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(D.C. Code Sec. 32-531.02)"
+"10","Florida","12","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"11","Georgia","13","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"12","Hawaii","15","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"13","Idaho","16","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"14","Illinois","17","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"15","Indiana","18","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"16","Iowa","19","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"17","Kansas","20","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"18","Kentucky","21","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"19","Louisiana","22","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"20","Maine","23","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,"( Caution: Paid leave law that can be used for health-related purposes and other reasons. )","(Me. Rev. Stat. tit. 26, Sec. 637)"
+"21","Maryland","24","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Md. Code, Lab. & Empl. Sec. 3-1304)"
+"22","Massachusetts","25","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Mass. Gen. Laws ch. 149, Sec. 148)"
+"23","Michigan","26","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Mich. Comp. Laws Sec. 408.963(2))"
+"24","Minnesota","27","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"25","Mississippi","28","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"26","Missouri","29","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"27","Montana","30","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"28","Nebraska","31","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"29","Nevada","32","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,"( Caution: Paid leave law can be used for health-related purposes and other reasons. Nev. Rev. Stat. Sec. 608.0197 )","(Nev. Rev. Stat.  608.0197)"
+"30","New Hampshire","33","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"31","New Jersey","34","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(N.J. Admin. Code Sec. 12:693.2)"
+"32","New Mexico","35","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"33","New York","36","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(N.Y. Lab. Law Sec. 196-b)"
+"34","North Carolina","37","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"35","North Dakota","38","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"36","Ohio","39","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"37","Oklahoma","40","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"38","Oregon","41","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Or. Rev. Stat. Sec. 653.606)"
+"39","Pennsylvania","42","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"40","Rhode Island","44","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(R.I. Gen. Laws Sec. 28-57-5)"
+"41","South Carolina","45","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"42","South Dakota","46","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"43","Tennessee","47","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"44","Texas","48","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"45","Utah","49","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"46","Vermont","50","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Vt. Stat. tit. 21, Sec. 482)"
+"47","Virginia","51","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"48","Washington","53","paid sick leave","Number of employees to trigger requirement to provide PSL",TRUE,1,"Yes",NA,NA,NA,"(Wash. Rev. Code Sec. 49.46.210)"
+"49","West Virginia","54","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"50","Wisconsin","55","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
+"51","Wyoming","56","paid sick leave","Number of employees to trigger requirement to provide PSL",FALSE,0,"No",NA,NA,NA,NA
