@@ -29,6 +29,10 @@ get_etl_objects = function(){
       lst__demo
     )
     
+    ## save etl
+    saveRDS(etl, file = "clean/etl.rds")
+    
+    
     return(etl)
   }
   
