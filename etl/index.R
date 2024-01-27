@@ -10,8 +10,7 @@
     library(purrr)
     library(sf)             ## Spatial
     library(rmapshaper)
-    library(tigris)
-    library(geoarrow)
+    library(tigris) 
     library(leaflet)
     library(geojsonio)
     library(tidycensus)     ## Others
@@ -37,7 +36,7 @@
 { # Seeds -------------------------------------------------------------------
   "code/demographics/demographics.R"
   "code/crosswalks/crosswalks.R"
-  "code/spatial/spatial.R"
+  "code/spatial-boundaries/spatial.R"
   "code/simulate data/health_outcomes.R"
   "code/simulate data/policy_data.R"
 }
