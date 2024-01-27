@@ -1,8 +1,4 @@
 doi_path,publication_link,name
-10.1038__s41591-022-01872-6,https://doi.org/10.1038/s41591-022-01872-6,City-level impact of extreme temperatures and mortality in Latin America
-10.1038__s41591-020-01214-4,https://doi.org/10.1038/s41591-020-01214-4,Life expectancy and mortality in 363 cities of Latin America
-10.1007__s11524-018-00326-0,https://doi.org/10.1007/s11524-018-00326-0,Building a Data Platform for Cross-Country Urban Health Studies: the SALURBAL Study
-10.1002__gch2.201800013,https://doi.org/10.1002/gch2.201800013,A Novel International Partnership for Actionable Evidence on Urban Health in Latin America: LAC‐Urban Health and SALURBAL
 10.1186__s12889-023-16251-0,https://doi.org/10.1186/s12889-023-16251-0,Association of service facilities and amenities with adolescent birth rates in Mexican cities
 10.1016__S2214-109X_23_00274-7,https://doi.org/10.1016/S2214-109X(23)00274-7,"Effects of an urban cable car intervention on physical activity: the TrUST natural experiment in Bogotá, Colombia"
 10.1038__s41598-023-33641-x,https://doi.org/10.1038/s41598-023-33641-x,Assessing cohesion and diversity in the collaboration network of the SALURBAL project
@@ -35,14 +31,15 @@ doi_path,publication_link,name
 10.1186__s12889-022-13752-2,https://doi.org/10.1186/s12889-022-13752-2,Aging and self-reported health in 114 Latin American cities: gender and socio-economic inequalities
 10.1017__S1368980021002457,https://doi.org/10.1017/S1368980021002457,Educational inequalities in obesity: a multilevel analysis of survey data from cities in Latin America
 10.1017__S1368980021004833,https://doi.org/10.1017/S1368980021004833,Potential impacts of policies to reduce purchasing of ultra-processed foods in Mexico at different stages of the social transition: an agent-based modelling approach
-10.1093__aje/kwac001,https://doi.org/10.1093/aje/kwac001,Racial Inequities in Self-Rated Health Across Brazilian Cities: Does Residential Segregation Play a Role?
+10.1093__aje_kwac001,https://doi.org/10.1093/aje/kwac001,Racial Inequities in Self-Rated Health Across Brazilian Cities: Does Residential Segregation Play a Role?
 10.1007__s11524-022-00658-y,https://doi.org/10.1007/s11524-022-00658-y,"Excess Mortality during the COVID-19 Pandemic in Cities of Chile: Magnitude, Inequalities, and Urban Determinants"
+10.1038__s41591-022-01872-6,https://doi.org/10.1038/s41591-022-01872-6,City-level impact of extreme temperatures and mortality in Latin America
 10.1016__j.ssmph.2022.101101,https://doi.org/10.1016/j.ssmph.2022.101101,Association between informal employment and depressive symptoms in 11 cities in Latin America
 10.1016__j.landurbplan.2021.104320,https://doi.org/10.1016/j.landurbplan.2021.104320,Is self-reported park proximity associated with perceived social disorder? Findings from eleven cities in Latin America
 10.3389__fnut.2022.791767,https://doi.org/10.3389/fnut.2022.791767,Greenhouse Gas Emissions Associated With the Mexican Diet: Identifying Social Groups With the Largest Carbon Footprint
 10.1289__EHP7870,https://doi.org/10.1289/EHP7870,Associations of Urban Environment Features with Hypertension and Blood Pressure across 230 Latin American Cities
 10.1016__S2542-5196_21_00323-5,https://doi.org/10.1016/S2542-5196(21)00323-5,Urban landscape and street-design factors associated with road-traffic mortality in Latin America between 2010 and 2016 (SALURBAL): an ecological study
-10.1093__ije/dyab137,https://doi.org/10.1093/ije/dyab137,Mortality amenable to healthcare in Latin American cities: a cross-sectional study examining between-country variation in amenable mortality and the role of urban metrics
+10.1093__ije_dyab137,https://doi.org/10.1093/ije/dyab137,Mortality amenable to healthcare in Latin American cities: a cross-sectional study examining between-country variation in amenable mortality and the role of urban metrics
 10.1007__s11116-021-10260-x,https://doi.org/10.1007/s11116-021-10260-x,User expectations and perceptions towards new public transport infrastructure: evaluating a cable car in Bogotá
 10.3390__ijerph19031094,https://doi.org/10.3390/ijerph19031094,An Experimental Study Evaluating the Influence of Front-of-Package Warning Labels on Adolescent’s Purchase Intention of Processed Food Products
 10.3390__ijerph19031353,https://doi.org/10.3390/ijerph19031353,Changes in the Retail Food Environment in Mexican Cities and Their Association with Blood Pressure Outcomes
@@ -56,7 +53,7 @@ doi_path,publication_link,name
 10.1136__jech-2020-216116,https://doi.org/10.1136/jech-2020-216116,Association of education level with diabetes prevalence in Latin American cities and its modification by city social environment
 10.1016__j.socscimed.2021.114157,https://doi.org/10.1016/j.socscimed.2021.114157,From causal loop diagrams to future scenarios: Using the cross-impact balance method to augment understanding of urban health in Latin America
 10.1186__s12889-021-11617-8,https://doi.org/10.1186/s12889-021-11617-8,"Educational inequalities, urbanicity and levels of non-communicable diseases risk factors: evaluating trends in Argentina (2005–2013)"
-10.1016__S2589-75002100174-6,https://doi.org/10.1016/S2589-7500(21)00174-6,The effect of population mobility on COVID-19 incidence in 314 Latin American cities: a longitudinal ecological study with mobile phone location data
+10.1016__S2589-7500_21_00174-6,https://doi.org/10.1016/S2589-7500(21)00174-6,The effect of population mobility on COVID-19 incidence in 314 Latin American cities: a longitudinal ecological study with mobile phone location data
 10.1016__j.tra.2020.12.004,https://doi.org/10.1016/j.tra.2020.12.004,"Support for market-based and command-and-control congestion relief policies in Latin American cities: Effects of mobility, environmental health, and city-level factors"
 10.1016__j.socscimed.2020.113102,https://doi.org/10.1016/j.socscimed.2020.113102,Evaluating the health effects of place-based slum upgrading physical environment interventions: A systematic review (2012–2018)☆
 10.3389__fnut.2021.647497,https://doi.org/10.3389/fnut.2021.647497,Climate Trends and Consumption of Foods and Beverages by Processing Level in Mexican Cities
@@ -72,6 +69,7 @@ doi_path,publication_link,name
 10.1136__jech-2020-215137,https://doi.org/10.1136/jech-2020-215137,Characterising variability and predictors of infant mortality in urban settings: findings from 286 Latin American cities
 10.1007__s11524-020-00509-8,https://doi.org/10.1007/s11524-020-00509-8,"COVID-19, Ambient Air Pollution, and Environmental Health Inequities in Latin American Cities"
 10.3390__ijerph18020655,https://doi.org/10.3390/ijerph18020655,Social Inclusion and Physical Activity in Ciclovía Recreativa Programs in Latin America
+10.1038__s41591-020-01214-4,https://doi.org/10.1038/s41591-020-01214-4,Life expectancy and mortality in 363 cities of Latin America
 10.3390__ijerph17238956,https://doi.org/10.3390/ijerph17238956,Physical Disorders and Poor Self-Rated Health in Adults Living in Four Latin American Cities: A Multilevel Approach
 10.1016__j.healthplace.2020.102461,https://doi.org/10.1016/j.healthplace.2020.102461,Longitudinal changes in the retail food environment in Mexico and their association with diabetes
 10.1007__s11524-020-00495-x,https://doi.org/10.1007/s11524-020-00495-x,Web Data Mining: Validity of Data from Google Earth for Food Retail Evaluation
@@ -83,8 +81,10 @@ doi_path,publication_link,name
 10.3389__fpubh.2020.00064,https://doi.org/10.3389/fpubh.2020.00064,"Urban Transformations and Health: Methods for TrUST—a Natural Experiment Evaluating the Impacts of a Mass Transit Cable Car in Bogotá, Colombia"
 10.1007__s11524-019-00408-7,https://doi.org/10.1007/s11524-019-00408-7,Assessing Google Street View Image Availability in Latin American Cities
 10.1017__S1368980019002891,https://doi.org/10.1017/S1368980019002891,The food environment in Latin America: a systematic review with a focus on environments relevant to obesity and related chronic diseases
-10.1016__S2542-51961930235-9,https://doi.org/10.1016/S2542-5196(19)30235-9,Inequalities in life expectancy in six large Latin American cities from the SALURBAL study: an ecological analysis
+10.1016__S2542-5196_19_30235-9,https://doi.org/10.1016/S2542-5196(19)30235-9,Inequalities in life expectancy in six large Latin American cities from the SALURBAL study: an ecological analysis
 10.1016__j.healthplace.2019.102215,https://doi.org/10.1016/j.healthplace.2019.102215,Using community-based system dynamics modeling to understand the complex systems that influence health in cities: The SALURBAL study
 10.1007__s40572-019-00259-z,https://doi.org/10.1007/s40572-019-00259-z,Measuring Neighborhood Order and Disorder: a Rapid Literature Review
 10.1016__j.jth.2019.100607,https://doi.org/10.1016/j.jth.2019.100607,Commute patterns and depression: Evidence from eleven Latin American cities
 10.1016__j.amepre.2019.03.017,https://doi.org/10.1016/j.amepre.2019.03.017,Complex Systems Approaches to Diet: A Systematic Review
+10.1007__s11524-018-00326-0,https://doi.org/10.1007/s11524-018-00326-0,Building a Data Platform for Cross-Country Urban Health Studies: the SALURBAL Study
+10.1002__gch2.201800013,https://doi.org/10.1002/gch2.201800013,A Novel International Partnership for Actionable Evidence on Urban Health in Latin America: LAC‐Urban Health and SALURBAL
